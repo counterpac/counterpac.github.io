@@ -499,7 +499,7 @@ h1{
 	/*text-transform:uppercase;*/
 	color:#FFF;
 	text-shadow: 2px 2px 5px #333;
-	letter-spacing:.1em;
+	letter-spacing:.05em;
 }
 #center_textbox_video{
 	padding:7% 0 5% 0;
