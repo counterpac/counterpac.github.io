@@ -491,15 +491,24 @@ h1{
 	margin:61% auto 0% auto;	
 }
 
+#center_textbox_wrap{
+    float: left;
+    position: relative;
+    left: 50%;
+}
+
 #center_textbox_home{
+	float: left;
+	position: relative;
+	left: -50%;
 	padding:7% 0 5% 0;
-	text-align:center;
-	font:2.4em/1.2em 'Cubano-Regular', Helvetica, sans-serif;
+	text-align:left;
+	font:2.2em/1.2em 'Cubano-Regular', Helvetica, sans-serif;
 	text-transform:uppercase;
 	color:#FFF;
-	text-shadow: 2px 2px 5px #333;
-	letter-spacing:.1em;
+	letter-spacing: .05em;
 }
+
 #center_textbox_video{
 	padding:7% 0 5% 0;
 	text-align:center;
