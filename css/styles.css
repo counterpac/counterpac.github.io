@@ -1109,10 +1109,11 @@ input[type="submit"]{
 	padding:2.5% 5.5%;
 	cursor:pointer;
 }
-input[type="text"], input[type="email"]{
+
+.signup-form {
 	width:95%;
 	font:1em/1em Georgia, "Times New Roman", Times, serif;
-	text-transform:uppercase;
+	/*text-transform:uppercase;*/
 	color:#838170;
 	padding:2.25%;
 	margin-bottom:2%;
