@@ -366,9 +366,11 @@ function animate_hiw_3() {
 
 
 /* Vimeo API controls */
+/*
 var f = $('iframe'),
     url = f.attr('src').split('?')[0],
     status = $('.status');
+*/
 
 // Listen for messages from the player
 if (window.addEventListener){
