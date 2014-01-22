@@ -105,8 +105,8 @@ body {
 	margin-right:3px;
 	background-size:100%;
 }
+#social_nav a#fb{background-image:url('../images/social_fb.png');}
 #social_nav a#twitter{background-image:url('../images/social_twitter.png');}
-#social_nav a#google{background-image:url('../images/social_google.png');}
 #nav_container{
 	position:absolute;
 	z-index:999;

@@ -129,23 +129,14 @@ $().ready(function() {
 </head>
 <body>
     <div id="fb-root"></div>
-    <script>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '204262023106809',
-          status     : true,
-          xfbml      : true
-        });
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/all.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-    </script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=204262023106809";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
     <div id="topbar_container">
   <div id="topbar"></div>
   <div id="closebox"></div>
@@ -153,8 +144,7 @@ $().ready(function() {
 <div id="scale_container">
   <div id="social_nav_container">
     <div id="social_nav"> 
-<div class="fb-like" data-href="https://www.facebook.com/counterpac.org" data-layout="standard" data-action="like" 
-    data-show-faces="false" data-share="false"></div> 
+      <a href="https://www.facebook.com/counterpac.org" target="_blank" id="fb"></a> <a href="https://twitter.com/counterpac" target="_blank" id="twitter"></a>
     </div>
   </div>
   <div id="nav_container">
@@ -431,8 +421,11 @@ $().ready(function() {
             <div class="tricolumn">
               <h3 class="salmon">Take action</h3>
               <h5>Connect</h5>
-              <div id="connect_icon_container" class="clearfix"> <div class="fb-like-box" data-href="http://www.facebook.com/counterpac.org" data-colorscheme="dark" data-show-faces="false" data-header="false" data-stream="false" data-show-border="false"></div> <a href="#" target="_blank" class="connect_icon"><img src="images/connect_twitter.png" /></a> 
-                 </div>
+              <div id="connect_icon_container" class="clearfix"> 
+                <div class="fb-like" data-href="https://www.facebook.com/counterpac.org" data-layout="standard" data-action="like" data-show-faces="false" data-share="true" width="80" style="padding-bottom:0.8em"></div>
+                <a href="https://twitter.com/counterpac" class="twitter-follow-button" data-show-count="false" data-lang="en"></a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              </div>
               <span class="connect_detail">3855 25th St, San Francisco, CA 94114<br />
               <a href="mailto:info@counterpac.org">info@counterpac.org</a></span> </div>
             <div class="tricolumn toppad">
