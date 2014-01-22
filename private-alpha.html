@@ -128,13 +128,34 @@ $().ready(function() {
 </script>
 </head>
 <body>
-<div id="topbar_container">
+    <div id="fb-root"></div>
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '204262023106809',
+          status     : true,
+          xfbml      : true
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/all.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id="topbar_container">
   <div id="topbar"></div>
   <div id="closebox"></div>
 </div>
 <div id="scale_container">
   <div id="social_nav_container">
-    <div id="social_nav"> <a href="#" target="_blank" id="fb"></a> <a href="#" target="_blank" id="twitter"></a>  </div>
+    <div id="social_nav"> 
+<div class="fb-like" data-href="https://www.facebook.com/counterpac.org" data-layout="standard" data-action="like" 
+    data-show-faces="false" data-share="false"></div> 
+    </div>
   </div>
   <div id="nav_container">
     <div id="fancynav">
