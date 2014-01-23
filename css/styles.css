@@ -300,13 +300,13 @@ body {
 /* layout */
 .doublecolumn{
 	float:left;
-	width:60.34%;
+	width:40%;
 	margin-right:5%;
 	text-align:left;
 }
 .tricolumn{
 	float:left;
-	width:30%;
+	width:40%;
 	margin-right:5%;
 	text-align:left;
 	color:#FFFFFF;
@@ -495,7 +495,7 @@ h1{
 	padding:7% 0 5% 0;
 	text-align:center;
 	/*font:2.4em/1.2em 'Cubano-Regular', Helvetica, sans-serif;*/
-	font:25px 'National-Bold', Arial, Helvetica, sans-serif;
+	font:3em 'National-Bold', Arial, Helvetica, sans-serif;
 	/*text-transform:uppercase;*/
 	color:#FFF;
 	text-shadow: 2px 2px 5px #333;
