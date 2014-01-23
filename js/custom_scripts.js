@@ -370,7 +370,7 @@ function animate_hiw_3() {
 var f = $('iframe'),
     url = f.attr('src').split('?')[0],
     status = $('.status');
-*/
+
 
 // Listen for messages from the player
 if (window.addEventListener){
@@ -420,13 +420,14 @@ function post(action, value) {
     
     f[0].contentWindow.postMessage(JSON.stringify(data), url);
 }
+*/
 
 function onReady() {
     
     
-    post('addEventListener', 'pause');
-    post('addEventListener', 'finish');
-    post('addEventListener', 'playProgress');
+//    post('addEventListener', 'pause');
+//    post('addEventListener', 'finish');
+//    post('addEventListener', 'playProgress');
 }
 
 function onPause() {
