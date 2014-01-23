@@ -107,6 +107,7 @@ body {
 }
 #social_nav a#fb{background-image:url('../images/social_fb.png');}
 #social_nav a#twitter{background-image:url('../images/social_twitter.png');}
+#social_nav a#google{background-image:url('../images/social_google.png');}
 #nav_container{
 	position:absolute;
 	z-index:999;
@@ -164,9 +165,9 @@ body {
 /* background styling for each main section */
 #section_home{
 	background-color:#5e5940;
-	background-image:url('../images/bg_home.jpg');
+	background-image:url('../images/bg_home_shorter.jpg');
 	height: 0;
-    padding-bottom: 83.85%; /* percentage relative to width of parent container to maintain aspect ratio */
+    padding-bottom: 70%; /* percentage relative to width of parent container to maintain aspect ratio */
 }
 #section_video_offset{
 	height:0px;
@@ -305,7 +306,7 @@ body {
 }
 .tricolumn{
 	float:left;
-	width:40%;
+	width:30%;
 	margin-right:5%;
 	text-align:left;
 	color:#FFFFFF;
@@ -487,11 +488,11 @@ h1{
 }
 #medallion{
 	width:81%;
-	margin:61% auto 0% auto;	
+	margin:30% auto 0% auto;	
 }
 
 #center_textbox_home{
-	padding:7% 0 5% 0;
+	padding:7% 0 2% 0;
 	text-align:center;
 	/*font:2.4em/1.2em 'Cubano-Regular', Helvetica, sans-serif;*/
 	font:3em 'National-Bold', Arial, Helvetica, sans-serif;
@@ -529,7 +530,7 @@ h1{
 	display:none;
 	width:100%;
 	height:0;
-	padding-bottom:6%;
+	padding-bottom:4%;
 	background-color:#ed145b;
 }
 .leftcol .h2_topbar, .leftcol .h2_bottombar{
