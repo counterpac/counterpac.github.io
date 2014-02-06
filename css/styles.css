@@ -244,18 +244,65 @@ body {
 }
 #section_two_point_five{
 	background-color:#8e8b7d;
-	background-image:url('../images/bg_two.jpg');
+	/*background-image:url('../images/bg_two.jpg');*/
+	background-image:url('../images/bg_diamond.png');
 	height: 0;
-	padding-bottom: 67.7%;
+	padding-bottom: 83%;
 }
 .paper {
-	padding: 6% 10% 10% 10%;
+	padding: 6% 10% 6% 10%;
 	margin: 1% 10% 10% 10%;
 	background-color:white;
 	font-size:14px;
 	text-align:left;
 	box-shadow: 5px 5px 5px #444444;
 }
+.paper li {
+	padding-top: 0.5em;
+}
+
+#section_two_point_six_inner{
+	margin:0 4.7% 0 4.7%;
+	padding:2.9% 3.1% 100% 3.1%;
+	background-image:url('../images/bg_gray_70.png');
+}
+#section_two_point_six{
+	background-color:#8e8b7d;
+	background-image:url('../images/bg_diamond.png');
+	height: 0;
+	padding: 4% 2% 50% 0;
+}
+#section_two_point_six h2{
+	padding: 0% 0% 0% 0%;
+}
+#section_two_point_six li{
+	font:1.8em/1.2em 'National-Book', Arial, Helvetica, sans-serif;
+	color:#FFFFFF;
+	margin:0 0 1% 0;
+	padding-top:0.7em;
+	text-align:left;
+    list-style-type: none;
+}
+#section_two_point_six li:before {
+    content: "• ";
+    color:#ed145b;
+}
+#section_two_point_six .question{
+	font:normal 1em/1em 'Cubano-regular', Arial, Helvetica, sans-serif;
+	/*font:1.3em/1.2em 'National-Book', Arial, Helvetica, sans-serif;*/
+	color:#FFFFFF;
+	padding:0;
+}
+#section_two_point_six .answer{
+	font:1em/1em 'National-Book', Arial, Helvetica, sans-serif;
+	line-height: 1.15em;
+	color:#FFFFFF;
+	padding:0 0 0 5%;
+}
+#section_two_point_six a{
+    color:#ed145b;
+}
+
 #spacer {
 	height:20px;
 }
@@ -538,7 +585,7 @@ h1{
 }
 h2{
 	font:3.6em/1.35em 'Cubano-Regular', Helvetica, sans-serif;
-	display:none;
+/*	display:none;*/
 	text-align:left;
 	margin:0;
 	padding:12.8% 1.56% 0 1.8%;
