@@ -247,8 +247,13 @@ body {
 	/*background-image:url('../images/bg_two.jpg');*/
 	background-image:url('../images/bg_diamond.png');
 	height: 0;
-	padding-bottom: 83%;
+	padding-bottom: 54%;
 }
+
+#section_two_point_five h2{
+	padding: 0 0 0 1.5em;
+}
+
 .paper {
 	padding: 6% 10% 6% 10%;
 	margin: 1% 10% 10% 10%;
@@ -263,14 +268,14 @@ body {
 
 #section_two_point_six_inner{
 	margin:0 4.7% 0 4.7%;
-	padding:2.9% 3.1% 100% 3.1%;
+	padding:2.9% 3.1% 4% 3.1%;
 	background-image:url('../images/bg_gray_70.png');
 }
 #section_two_point_six{
 	background-color:#8e8b7d;
 	background-image:url('../images/bg_diamond.png');
-	height: 0;
-	padding: 4% 2% 50% 0;
+	/*height: 0;*/
+	padding: 4% 2% 0 0;
 }
 #section_two_point_six h2{
 	padding: 0% 0% 0% 0%;
@@ -292,6 +297,7 @@ body {
 	/*font:1.3em/1.2em 'National-Book', Arial, Helvetica, sans-serif;*/
 	color:#FFFFFF;
 	padding:0;
+	cursor: pointer;
 }
 #section_two_point_six .answer{
 	font:1em/1em 'National-Book', Arial, Helvetica, sans-serif;

@@ -82,6 +82,17 @@ $().ready(function() {
 		}
 	});
 
+  $("#pledge-read-more").click( function() {
+    $("#pledge-remaining").removeClass( "hideme" );
+    $("#pledge-read-more").addClass( "hideme" );
+    $("#section_two_point_five").css( "padding-bottom", "90%" );
+    return false;
+  });
+
+  $(".question").click( function() {
+    $(this).siblings(".answer").toggleClass( "hideme" );
+  });
+
 
 	/*$("#donationForm").validate({
 		rules: {
@@ -394,6 +405,9 @@ $().ready(function() {
         <div class="block_container clearfix">
           <div id="spacer" style="height:20px;">
           </div>
+
+          <h2>The Pledge</h2>
+
           <div class="paper">
             <!--
             <p>
@@ -416,6 +430,10 @@ $().ready(function() {
                 <li><i>coordinated communications</i>, that is, any paid advertisement that a Candidate or anyone acting on his or her behalf coordinates with a third party.
                 </li>
               </ul>
+            </ul>
+            <a href="#" id="pledge-read-more">Read more...</a>
+            <ul id="pledge-remaining" class="hideme">
+
               <li><b>Countering Rejected Expenditures</b>. If any rejected expenditure is made, the Candidate that is advantaged by the rejected expenditure must, within three days of the expenditure, donate 50% of the cost of the rejected expenditure to a charity of the opposing Candidate&rsquo;s choice.
               <li><b>Resolution of Disputes</b>. If any dispute arises with regard to whether a rejected expenditure has been made, which Candidate has been advantaged by the rejected expenditure, the amount of the rejected expenditure, whether the rejected expenditure has been countered as described in this agreement, or any other question about the terms of this agreement, either Candidate may seek a determination from CounterPac, an independent, nonpartisan political organization dedicated to challenging and offsetting the effects of outside organizations on congressional campaigns. CounterPac’s determination will be binding on the Candidates.
               </li>
@@ -433,12 +451,12 @@ $().ready(function() {
           <div id="spacer" style="height:20px;">
           </div>
             <div id="section_two_point_six_inner">
-              <div class="h2_container" style="padding-bottom:35%">
+              <div class="">
                 <h2>Frequently Asked Questions</h2>
                 <ul>
                   <li>
                     <span class="question">Who are you?</span><br/>
-                    <div class="answer">
+                    <div class="answer hideme">
                       We are a group of concerned citizens
                       who believe that unlimited dark money is corrupting our political system.
                       We have backgrounds varying from tech entrepreneurs to political advisors.
@@ -447,7 +465,7 @@ $().ready(function() {
                   </li>
                   <li>
                     <span class="question">Why would any politician take the CounterPAC pledge?</span><br/>
-                    <div class="answer">
+                    <div class="answer hideme">
                       Politicians want to run their own campaigns.  Like anyone,
                       they would prefer to tell their own story rather than have it 
                       told for them.  But, like an arms race, they are not willing to eliminate outside money unilaterally; they are only willing to disarm if
@@ -456,7 +474,7 @@ $().ready(function() {
                   </li>
                   <li>
                     <span class="question">What makes you think this will work?</span><br/>
-                    <div class="answer">
+                    <div class="answer hideme">
                       Because it already has.  The Massachusetts Senate race in 2012
                       used a version of the pledge called &ldquo;The People&rsquo;s Pledge&rdquo;
                       and it worked.  For details, see Common Cause&rsquo;s paper: <a href="http://www.commoncause.org/site/pp.asp?c=dkLNK1MQIwG&b=8664093" target="_blank">A Plea for the Pledge</a>
