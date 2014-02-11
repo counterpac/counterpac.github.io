@@ -93,7 +93,6 @@ $().ready(function() {
     $(this).siblings(".answer").toggleClass( "hideme" );
   });
 
-
 	/*$("#donationForm").validate({
 		rules: {
 			name: "required",
@@ -501,7 +500,7 @@ $().ready(function() {
               </div>
               <span class="connect_detail">3855 25th St, San Francisco, CA 94114<br />
               <a href="mailto:info@counterpac.org">info@counterpac.org</a></span> </div>
-            <div class="tricolumn toppad" style="width:40%; float:right; top-margin:7%;">
+            <div class="tricolumn toppad" style="width:30%;top-margin:7%;">
               <h5>Join our newsletter</h5>
               <form action="http://counterpac.us3.list-manage.com/subscribe/post?u=005f754499096c8c9e23aa468&amp;id=fccf52aa7e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <input class="signup-form" id="mce-EMAIL" value="email" type="email" onfocus="if(this.value=='email') { this.value='' }" onblur="if(this.value=='') { this.value='email' }" name="EMAIL" />
@@ -516,12 +515,23 @@ $().ready(function() {
               </form>
             </div>
 
-            <!--
-            <div class="tricolumn toppad col_last">
+            
+            <div class="tricolumn toppad" style="width:25%;top-margin:7%;">
               <h5>Donate</h5>
+              <!--
+              <span class="connect_detail">We can use your financial support.<br />
+                All proceeds will go to help battling
+              </span>
+              <input name="donate" type="submit" value="Donate now" />
+            -->
+            <iframe id="donate-form" height="180" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://counterpac.wufoo.com/embed/z1ikvqls15oia2i/"></iframe>
+
+
+              <!--
               <p class="smaller"><span class="pinkcaps">COMING SOON.</span> We&rsquo;re honored you&rsquo;re eager to contribute to the fight against election spending. At this time, CounterPAC does not accept donations through this site.</p>
               <p class="smaller">Please connect with the CounterPAC team via email to coordinate your donation. </p>
             -->
+            
               <!-- <form id="donationForm">
                 <input name="name" type="text" value="name" onfocus="if(this.value=='name') { this.value='' }" onblur="if(this.value=='') { this.value='name' }" />
                 <input name="email" value="email" type="email" onfocus="if(this.value=='email') { this.value='' }" onblur="if(this.value=='') { this.value='email' }" />
@@ -529,9 +539,7 @@ $().ready(function() {
                 <br />
                 <input name="donate" type="submit" value="donate" />
               </form> -->
-            <!--
             </div>
-          -->
           </div>
           <div class="section_four_inner_dark clearfix">
             <div class="tricolumn">

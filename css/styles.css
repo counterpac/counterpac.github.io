@@ -382,7 +382,7 @@ body {
 }
 .tricolumn h5{
 	font:normal 1.7em/1em 'Cubano-regular', Arial, Helvetica, sans-serif;
-	margin: 12% 0 4% 0;
+	margin: 1em 0 4% 0;
 	color:#6c6a5b;
 }
 .tricolumn.toppad{
@@ -1161,7 +1161,7 @@ input[type="submit"]{
 	color:#FFFFFF;
 	font:1.5em/1em 'Cubano-Regular', Arial, Helvetica, sans-serif;
 	border:none;
-	padding:2.5% 5.5%;
+	padding:0.5em 0.9em;
 	cursor:pointer;
 }
 
