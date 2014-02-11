@@ -17,7 +17,7 @@ html{background-image:none;background-color:#99cc00}
 #container{border:0 solid #cccccc}
 .wufoo .info{
 	/*border-bottom:1px dotted #CCCCCC*/
-	display:none; !important;
+	display:none;
 	margin-bottom: -1em;
 }
 .wufoo .instruct{border:1px solid #e6e6e6}
