@@ -10,13 +10,14 @@ html{background-image:none;background-color:#99cc00}
 #logo{background-image:none;background-color:#669900}
 #container{background:#FFFFFF}
 .wufoo input.text, .wufoo textarea.textarea{background:#FFFFFF url(/images/fieldbg.gif) repeat-x top}
-.wufoo .focused{background:#FFF7C0}
+.wufoo .focused{}
 .wufoo .instruct{background-color:#F5F5F5}
 
 /* Borders */
 #container{border:0 solid #cccccc}
 .wufoo .info{
 	/*border-bottom:1px dotted #CCCCCC*/
+	display:none; !important;
 	margin-bottom: -1em;
 }
 .wufoo .instruct{border:1px solid #e6e6e6}
