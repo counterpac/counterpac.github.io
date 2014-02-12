@@ -93,6 +93,10 @@ $().ready(function() {
     $(this).siblings(".answer").toggleClass( "hideme" );
   });
 
+  $("#donate").click( function() {
+    document.location = "https://counterpac.wufoo.com/forms/z1ikvqls15oia2i/";
+  });
+
 	/*$("#donationForm").validate({
 		rules: {
 			name: "required",
@@ -517,28 +521,7 @@ $().ready(function() {
 
             
             <div class="tricolumn toppad" style="width:25%;top-margin:7%;">
-              <h5>Donate</h5>
-              <!--
-              <span class="connect_detail">We can use your financial support.<br />
-                All proceeds will go to help battling
-              </span>
-              <input name="donate" type="submit" value="Donate now" />
-            -->
-            <iframe id="donate-form" height="180" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none"  src="https://counterpac.wufoo.com/embed/z1ikvqls15oia2i/"></iframe>
-
-
-              <!--
-              <p class="smaller"><span class="pinkcaps">COMING SOON.</span> We&rsquo;re honored you&rsquo;re eager to contribute to the fight against election spending. At this time, CounterPAC does not accept donations through this site.</p>
-              <p class="smaller">Please connect with the CounterPAC team via email to coordinate your donation. </p>
-            -->
-            
-              <!-- <form id="donationForm">
-                <input name="name" type="text" value="name" onfocus="if(this.value=='name') { this.value='' }" onblur="if(this.value=='') { this.value='name' }" />
-                <input name="email" value="email" type="email" onfocus="if(this.value=='email') { this.value='' }" onblur="if(this.value=='') { this.value='email' }" />
-                <input name="amountz" type="text" value="amount" type="number" onfocus="if(this.value=='amount') { this.value='' }" onblur="if(this.value=='') { this.value='amount' }" />
-                <br />
-                <input name="donate" type="submit" value="donate" />
-              </form> -->
+              <input id="donate" name="donate" type="submit" value="Donate" style="margin-top:3.1em; margin-left:5em"/>
             </div>
           </div>
           <div class="section_four_inner_dark clearfix">
