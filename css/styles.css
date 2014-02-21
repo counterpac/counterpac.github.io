@@ -569,14 +569,14 @@ h1{
 	position:relative;
 }
 .leftcol .h2_container{
-	width:66.67%;
-	margin:33.33% 0 0 25%;
+	width:77.67%;
+	margin:32.33% 0 0 12%;
 	padding-bottom:63.54%;
 }
 .rightcol .h2_container{
 	width:83%;
 	margin:33.33% 0 0 8.33%;
-	padding-bottom:53.125%;
+	padding-bottom:46.125%;
 }
 .h2_topbar, .h2_bottombar{
 	position:absolute;
@@ -598,7 +598,7 @@ h2{
 	color:#FFF;
 	text-shadow: 2px 2px 5px #666;
 }
-.leftcol h2{text-align:right;}
+.leftcol h2{text-align:left;}
 .rightcol h2{text-align:left;}
 h3{
 	display:block;
