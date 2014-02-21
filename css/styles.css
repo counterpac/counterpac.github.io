@@ -1170,7 +1170,7 @@ input[type="submit"]{
 	font:1.5em/1.5em Georgia, "Times New Roman", Times, serif;
 	/*text-transform:uppercase;*/
 	color:#838170;
-	padding:2.25%;
+	padding:0 0 0 1%;
 	margin-bottom:2%;
 	border:1px solid #a09e8f;
 }
