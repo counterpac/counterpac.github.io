@@ -32,7 +32,7 @@ html{background-image:none;background-color:#99cc00}
 
 /* Typography */
 .wufoo .info h2{
-	font:normal 1em/1em 'Cubano-regular', Arial, Helvetica, sans-serif;
+	font:normal 0.1em/0.1em 'Cubano-regular', Arial, Helvetica, sans-serif;
 }
 .wufoo .info div{font-size:95%;font-family:inherit;color:#444444}
 .wufoo .section h3{font-size:110%;font-family:inherit;background:#FFFFFF;color:#000000}
