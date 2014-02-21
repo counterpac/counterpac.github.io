@@ -20,27 +20,49 @@ html{background-image:none;background-color:#99cc00}
 .wufoo input.text, .wufoo textarea.textarea{background:#FFFFFF repeat-x top}
 .wufoo .focused{}
 .wufoo .instruct{background-color:#F5F5F5}
+.wufoo li.focused{background-color: transparent;}
 
 /* Borders */
 #container{border:0 solid #cccccc}
+#container, html.embed {
+	background-color: transparent;
+}
 .wufoo .info{
-	/*border-bottom:1px dotted #CCCCCC*/
-	display:none !important;
+	padding: 0;
 }
 .wufoo .instruct{border:1px solid #e6e6e6}
 .wufoo .buttons a{ display:none;}
 
 /* Typography */
 .wufoo .info h2{
-	font:normal 1.7em/1em 'Cubano-regular', Arial, Helvetica, sans-serif;
-	margin: 1em 0 4% 0;
+	font:normal 1.4em/1em 'Cubano-Regular', Arial, Helvetica, sans-serif;
+	margin: 1em 0 0% 1em;
 	color: #6c6a5b;
 }
 .wufoo .info div{font-size:95%;font-family:inherit;color:#444444}
 .wufoo .section h3{font-size:110%;font-family:inherit;background:#FFFFFF;color:#000000}
 .wufoo .section div{font-size:85%;font-family:inherit;color:#444444}
-.wufoo label.desc, .wufoo legend.desc{font-size:95%;font-family:inherit;color:red;}
+.wufoo label.desc, .wufoo legend.desc{font-size:95%;font-family:inherit;color:#444444}
 .wufoo li div, .wufoo li div label, .wufoo li span label{font-family:inherit;color:#444444}
-.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{font-size:100%;font-family:inherit;color:#333333}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{font-size:100%;font-family:inherit;color:#333333;}
 .wufoo label.choice{color:#444444}
 .wufoo .instruct{font-size:80%;font-family:inherit;color:#444444}
+
+.wufoo label {
+	display: none;
+}
+
+form li.buttons {
+	padding: 0;
+}
+
+.wufoo #saveForm {
+	background-color:#ed145b;
+	text-align:center;
+	color:#FFFFFF;
+	font:1.2em/1em 'Cubano-Regular', Arial, Helvetica, sans-serif;
+	border:none;
+	padding:0.5em 0.9em;
+	cursor:pointer;	
+	margin: 0 0 0 1em;
+}
