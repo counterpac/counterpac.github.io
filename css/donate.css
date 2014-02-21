@@ -1,3 +1,46 @@
-.wufoo .info h2{
-	font:normal 1em/1em 'Cubano-regular', Arial, Helvetica, sans-serif;
+/* Logo */
+#logo a {background-image:url('http://wufoo.com/images/themes/logos/shark.png'); min-height:0; height:40px}
+* html #logo a {/* IE6 png Support */
+	background-image: none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src="http://wufoo.com/images/themes/logos/shark.png", sizingMethod="crop");
 }
+
+@font-face {
+	font-family: 'Cubano-Regular';
+	src: url('https://github.com/counterpac/counterpac.github.io/raw/master/webfonts/Cubano-Regular.eot');
+	src: local('☺'), url('https://github.com/counterpac/counterpac.github.io/raw/master/webfonts/Cubano-Regular.woff') format('woff'), url('https://github.com/counterpac/counterpac.github.io/raw/master/webfonts/Cubano-Regular.ttf') format('truetype'), url('https://github.com/counterpac/counterpac.github.io/raw/master/webfonts/Cubano-Regular.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Backgrounds */
+html{background-image:none;background-color:#99cc00}
+#logo{background-image:none;background-color:#669900}
+#container{background:transparent;}
+.wufoo input.text, .wufoo textarea.textarea{background:#FFFFFF url(/images/fieldbg.gif) repeat-x top}
+.wufoo .focused{}
+.wufoo .instruct{background-color:#F5F5F5}
+
+/* Borders */
+#container{border:0 solid #cccccc}
+.wufoo .info{
+	/*border-bottom:1px dotted #CCCCCC*/
+	display:none !important;
+}
+.wufoo .instruct{border:1px solid #e6e6e6}
+.wufoo .buttons a{ display:none;}
+
+/* Typography */
+.wufoo .info h2{
+	font:normal 1.7em/1em 'Cubano-regular', Arial, Helvetica, sans-serif;
+	margin: 1em 0 4% 0;
+	color: #6c6a5b;
+}
+.wufoo .info div{font-size:95%;font-family:inherit;color:#444444}
+.wufoo .section h3{font-size:110%;font-family:inherit;background:#FFFFFF;color:#000000}
+.wufoo .section div{font-size:85%;font-family:inherit;color:#444444}
+.wufoo label.desc, .wufoo legend.desc{font-size:95%;font-family:inherit;color:#444444}
+.wufoo li div, .wufoo li div label, .wufoo li span label{font-family:inherit;color:#444444}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{font-size:100%;font-family:inherit;color:#333333}
+.wufoo label.choice{color:#444444}
+.wufoo .instruct{font-size:80%;font-family:inherit;color:#444444}
