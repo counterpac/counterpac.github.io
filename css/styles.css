@@ -641,10 +641,12 @@ h4{
 	margin:0 0 1.5em 0;
 	padding:0;
 }
-
-/*MADE SLIGHTLY SMALLER THAN .LEFTCOL TO FIT NEW TEXT*/
 .rightcol .section_textbox p{
 	font:1.8em/1.0em 'National-Book', Arial, Helvetica, sans-serif;
+}
+#solution_textbox{
+	overflow-y: hidden;
+	padding-bottom: 0px;
 }
 .section_textbox img{
 	display:block;
