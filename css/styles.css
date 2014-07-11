@@ -477,12 +477,14 @@ body {
 }
 .divider_footer .lft_txt{
 	float:left;
-	width:45%;
+	width:43%;
 	text-align:center;
+	line-height:initial;
 }
 .divider_footer .rt_txt{
 	float:right;
 	width:45%;
+	padding-top:1%;
 	text-align:center;
 }
 #back_to_top{
@@ -503,7 +505,7 @@ body {
 	position:absolute;
 	left:42%;
 	width:16.77%;
-	top:-165%;
+	top:-79%;
 }
 .centercol{
 	width:41%;
