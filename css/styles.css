@@ -1204,6 +1204,11 @@ h4{
 		margin-left:170px;
 		margin-top:-70px !important;
 	}
+	
+	.row_text{
+		margin-right:2.14%;
+		padding-right:5%;
+	}
 
 }
 /*END SMALL DEVICE STYLE FIXES*/
