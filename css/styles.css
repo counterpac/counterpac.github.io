@@ -1072,7 +1072,7 @@ h4{
 	}
 	.row_text{
 		padding-top:.4%;
-		width:56%;
+		width:50%;
 	}
 	#section_four {
 		padding-bottom: 185% !important;
@@ -1203,12 +1203,6 @@ h4{
 	.toppad{
 		margin-left:170px;
 		margin-top:-70px !important;
-	}
-	
-	.row_text{
-		width:40%;
-		margin-right:2.14%;
-		padding-right:5%;
 	}
 
 }
