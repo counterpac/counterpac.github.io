@@ -305,6 +305,13 @@ body {
 	color:#FFFFFF;
 	padding:2% 0 0 5%;
 }
+
+.answer li{
+	font:1em/1em 'National-Book', Arial, Helvetica, sans-serif !important;
+	line-height: 1.15em;
+	color:#FFFFFF;
+}
+
 #section_two_point_six a{
     color:#ed145b;
 }
