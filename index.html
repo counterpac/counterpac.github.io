@@ -2,10 +2,766 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>CounterPac - Coming Soon</title>
+<title>CounterPac</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link href="css/styles.css?v=3" rel="stylesheet" type="text/css" />
+
+<link rel="icon" type="image/png" href="favicon.png" />
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+<![endif]-->
+<!--[if lte IE 8]>
+	<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" language="javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.frame.animation.1.1.2.js"></script>
+<script type="text/javascript" language="javascript" src="js/frame_animate.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.validate.min.js"></script>
+<!-- carousel -->
+<script type="text/javascript" language="javascript">
+			$(function() {
+
+				//	Responsive layout, resizing the items
+				$('#carousel').carouFredSel({
+					auto: {
+            duration: 1000,
+						pauseOnHover: true,
+						play: true
+					},
+					prev: '#prev1',
+					next: '#next1',
+					responsive: true,
+					width: '100%',
+					scroll: 1,
+					swipe: {
+						onMouse: true,
+						onTouch: true
+					},
+					pagination: {
+						container : "#pagination",
+						anchorBuilder   : function(nr) {
+							return '<a href="#'+nr+'"><span>&bull;</span></a>';
+						}
+					},
+					items: {
+						width: 400,
+					//	height: '30%',	//	optionally resize item-height
+						visible: {
+							min: 1,
+							max: 1
+						}
+					}
+				});
+
+
+			});
+</script>
+<script type="text/javascript" language="javascript">
+// form validation
+$().ready(function() {
+    $("#privacy-policy-link").click( function() {
+      $("#section_footer").slideDown();
+      $("html, body").animate({ scrollTop: $(document).height() } );
+      return false;
+    });
+
+		$("#subForm").validate({
+		rules: {
+			email: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			email: "Please enter a valid email address"
+		}
+	});
+
+  $("#pledge-read-more").click( function() {
+    $("#pledge-remaining").removeClass( "hideme" );
+    $("#pledge-read-more").addClass( "hideme" );
+    $("#section_two_point_five").css( "padding-bottom", "110%" );
+    return false;
+  });
+
+  $(".question").click( function() {
+    $(this).siblings(".answer").toggleClass( "hideme" );
+  });
+
+
+  $("#donate").click( function() {
+    document.location = "https://counterpac.wufoo.com/forms/z1ikvqls15oia2i/";
+  });
+
+
+
+	/*$("#donationForm").validate({
+		rules: {
+			name: "required",
+			email: {
+				required: true,
+				email: true
+			},
+			amount: {
+				required: true,
+				number: true
+			}
+		},
+		messages: {
+			name: "Please enter your name",
+			email: "Please enter a valid email address",
+			amount: {
+				required: "Please enter a donation amount",
+				number: "Donation amount must be a number"
+			}
+		}
+	});*/
+
+});
+</script>
+<!-- Analytics  -->
+<script type="text/javascript" language="javascript">
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-41841100-1', 'counterpac.org');
+	  ga('send', 'pageview');
+</script>
+<script type="text/javascript" language="javascript">
+  $(function() {
+    $( "#accordion" ).accordion({
+      collapsible: true,
+	  active: false,
+	  icons: { "header": "ui-icon-down", "activeHeader": "ui-icon-up" },
+	  heightStyle: "content"
+    });
+  });
+</script>
 </head>
 <body>
-<p>Please contact Jim Greer for access to our alpha site</p>
+    <div id="fb-root"></div>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=204262023106809";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div id="topbar_container">
+  <div id="topbar"></div>
+  <div id="closebox"></div>
+</div>
+<div id="scale_container">
+  <div id="social_nav_container">
+    <div id="social_nav"> 
+      <a href="https://www.facebook.com/counterpac.org" target="_blank" id="fb"></a> <a href="https://twitter.com/counterpac" target="_blank" id="twitter"></a>
+    </div>
+  </div>
+  <div id="nav_container">
+    <div id="fancynav">
+      <!--
+    	<a href="#section_video_offset" id="nav_section_video_offset" class="nav_item">watch</a>
+        &bull;
+      -->
+        <a href="#section_one" id="nav_section_one" class="nav_item">problem</a>
+        &bull;
+        <a href="#section_two" id="nav_section_two" class="nav_item">solution</a>
+        &bull;
+        <a href="#section_three" id="nav_section_three" class="nav_item">how it works</a>
+        &bull;
+        <a href="#section_four" id="nav_section_four" class="nav_item">take action</a>
+        &bull;
+        <a id="nav_share" class="nav_item">share</a>
+    </div>
+  </div>
+  <div id="outer_main">
+    <div id="inner_main">
+      <!-- home -->
+      <div id="section_home" class="inner_container bg_sizing">
+        <div class="block_container clearfix">
+          <div class="centercol">
+            <img src="images/home_medallion_1.png" id="medallion" />
+          </div>
+          <div id="center_textbox_home">
+            Untraceable attack money is flooding our elections and corrupting our democracy. We can fix it with a simple pledge.<br/><br/>
+            Candidates know who's behind the money, and so should we.<br />
+
+          </div>
+          <div class="centercol">
+            <a href="#section_video_offset" class="nav_item"><img src="images/down_arrow_home.png" class="down_arrow_home" /></a></div>
+          </div>
+        </div>
+      </div>
+      <!-- home -->
+      <div id="section_video_offset" class="section_container"></div>
+      <div class="divider_thin"></div>
+      <!-- section 1 -->
+      <div id="section_one" class="inner_container bg_sizing section_container clearfix">
+        <div class="block_container clearfix">
+          <div class="leftcol">
+            <div class="section_textbox">
+              <p>Since the Citizens United decision, there has been a tremendous rise in outside money in American politics.</p>
+              <p>Untraceable spending breeds corruption that allows front groups, shell corporations, and even foreign governments to secretly buy influence over our elected officials. Candidates in both parties are benefiting from the record-breaking secret spending. It’s a bi-partisan problem that needs a non-partisan solution.</p>
+
+
+              <!-- Tooltip popup -->
+              <!--<div class="sourcelink">
+                <div class="toolTipWrapper"> <a href="http://www.commoncause.org/site/pp.asp?c=dkLNK1MQIwG&b=8664093" target="_blank"><span class="toolTipWrapper_inner trigger">source</span></a>
+                  <div class="popup">
+                    <div class="popup_inner"> 
+                      &ldquo;Outside groups outspend small candidate contributions 3 to 1.&rdquo;<br /
+                      <a href="" target="_blank">Common Cause</a> </div>
+                  </div>
+                </div>
+              </div>
+              -->
+              <!-- END Tooltip popup -->
+            </div>
+          </div>
+          <div class="rightcol">
+            <div class="h2_container">
+              <div class="h2_topbar"></div>
+              <div class="h2_bottombar"></div>
+              <h2>UNTRACEABLE SPENDING IS CORRUPTING OUR DEMOCRACY</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section 1 -->
+      <div id="counter_facts"> <img src="images/carousel_title.png" class="carousel_title"/>
+        <div class="list_carousel_container_outer"> <img src="images/carousel_arrow_prev_pink.png" id="prev1" class="prev" />
+          <div class="list_carousel_container">
+            <div class="list_carousel responsive clearfix">
+              <ul id="carousel">
+                <!-- START SLIDE -->
+                <li>
+                <div class="fulltile">
+                	<img src="images/zbs_tile_1.png" />
+                    <!-- Tooltip popup -->
+                      <div class="sourcelink">
+                        <div class="toolTipWrapperHorizontal"> <span class="toolTipWrapper_inner trigger">source</span>
+                          <div class="popup">
+                            <div class="popup_inner">Historical Elections: the Money Behind the Election.<br />
+                              <a href="http://www.opensecrets.org/outsidespending/disclosure.php" target="_blank">Center for Responsive Politics</a>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                     <!-- END Tooltip popup -->
+                </div>                
+                </li>
+                <!-- END SLIDE -->
+                <!-- START SLIDE -->
+                <li>
+                <div class="fulltile">
+                	<img src="images/zbs_tile_5.jpg" />
+                    <!-- Tooltip popup -->
+                      <div class="sourcelink">
+                        <div class="toolTipWrapperHorizontal"> <span class="toolTipWrapper_inner trigger">source</span>
+                          <div class="popup">
+                            <div class="popup_inner">A Plea for the Pledge<br />
+                              <a href="http://www.opensecrets.org/news/2012/10/2012-election-spending-will-reach-6.html" target="_blank">Common Cause</a>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                     <!-- END Tooltip popup -->
+                </div>                
+                </li>
+                <!-- END SLIDE -->
+                <!-- START SLIDE -->
+                <li>
+                <div class="fulltile">
+                	<img src="images/zbs_tile_6.jpg" />
+                    <!-- Tooltip popup -->
+                      <div class="sourcelink">
+                        <div class="toolTipWrapperHorizontal"> <span class="toolTipWrapper_inner trigger">source</span>
+                          <div class="popup">
+                            <div class="popup_inner">A Plea for the Pledge<br />
+                              <a href="http://www.opensecrets.org/news/2012/10/2012-election-spending-will-reach-6.html" target="_blank">Common Cause</a>
+                             </div>
+
+                          </div>
+                        </div>
+                      </div>
+                     <!-- END Tooltip popup -->
+                </div>                
+                </li>
+                <!-- END SLIDE -->
+                <!-- START SLIDE -->
+                <li>
+                <div class="fulltile">
+                	<img src="images/zbs_tile_4.png" />
+                    <!-- Tooltip popup -->
+                      <div class="sourcelink">
+                        <div class="toolTipWrapperHorizontal"> <span class="toolTipWrapper_inner trigger">source</span>
+                          <div class="popup">
+                            <div class="popup_inner">A Plea for the Pledge<br />
+                              <a href="http://www.opensecrets.org/news/2012/10/2012-election-spending-will-reach-6.html" target="_blank">Common Cause</a>
+                             </div>
+                          </div>
+                        </div>
+                      </div>
+                     <!-- END Tooltip popup -->
+                </div>                
+                </li>
+                <!-- END SLIDE -->
+              </ul>
+            </div>
+          </div>
+          <img src="images/carousel_arrow_next_pink.png" id="next1" class="next" />
+        </div>
+          <div id="pagination" class="clearfix"></div>
+      </div>
+
+      <!-- section 2 -->
+      <div id="section_two" class="inner_container bg_sizing section_container clearfix">
+        <div class="block_container clearfix">
+          <div class="leftcol">
+            <div class="h2_container" style="padding-bottom:47%">
+              <div class="h2_topbar"></div>
+              <div class="h2_bottombar"></div>
+
+
+              <h2>NO NEW LEGISLATION. JUST A COMMON SENSE AGREEMENT.</h2>
+            </div>
+          </div>
+          <div class="rightcol">
+            <div id="solution_textbox" class="section_textbox">
+              <p>We know how to get dark money out of an election &mdash; and it doesn’t take an act of Congress to do it.</p>
+              <p>During the 2012 Massachusetts Senate race Elizabeth Warren and Scott Brown agreed that if any outside group spent on their behalf that they would give to charity out of their own funds.</p>
+              <p>It worked. Outside spending was drastically reduced to merely 9% of total spending in contrast to upwards of 60% in other states.</p>
+              <p>CounterPAC’s mission this year is to get as many candidates as possible to agree to a similar pledge rejecting untraceable dark money.</p>
+              <p>Democrats and Republicans don’t agree on much, but leaders &mdash; and voters &mdash; in both parties want an end to untraceable secret spending in elections.</p>
+              <!-- Tooltip popup -->
+              <div class="sourcelink">
+                <div class="toolTipWrapper"> <a href="http://www.commoncause.org/site/pp.asp?c=dkLNK1MQIwG&b=8664093" target="_blank"><span class="toolTipWrapper_inner trigger">source</span></a>
+                  <div class="popup">
+                    <div class="popup_inner" style="margin-left:20%;"> 
+                      &ldquo;reduced to merely 9%....&rdquo;<br />
+                      <a href="" target="_blank">Common Cause</a> </div>
+                  </div>
+                </div>
+              </div>
+              <!-- END Tooltip popup -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- section 2 -->
+      <!--
+      <div id="divider_goals" class="divider bg_sizing"></div>
+    -->
+
+      <!-- section 3 -->
+      <div id="section_three" class="inner_container bg_sizing section_container clearfix">
+        <div class="block_container clearfix">
+          <div id="section_three_inner">
+            <h3>CounterPAC&rsquo;s Role</h3>
+            <!-- row 1 -->
+            <div class="row clearfix"> <span id="hiw_num_1" class="row_number">1</span>
+              <div class="row_text">
+                <h4>Promoter</h4>
+                <p>CounterPAC will make candidates take a stand on the pledge using outreach ads and social media.</p>
+              </div>
+            </div>
+            <!-- END row 1 -->
+            <!-- row 2 -->
+            <div class="row clearfix"> <span id="hiw_num_2" class="row_number">2</span>
+              <!--
+              <div id="hiw_2" class="row_graphic bg_sizing"></div>
+            -->
+              <div class="row_text">
+                <h4>Moderator</h4>
+                <p>CounterPAC will act as a monitor of untraceable spending and a moderator between the candidates.</p>
+              </div>
+            </div>
+            <!-- END row 2 -->
+            <!-- row 3 -->
+            <div class="row clearfix"> <span id="hiw_num_3" class="row_number">3</span>
+              <!--
+              <div id="hiw_3" class="row_graphic bg_sizing"></div>
+              -->
+              <div class="row_text">
+                <h4>Enforcer</h4>
+                <p>CounterPAC will highlight any pledge violations through significant advertising and public outreach campaigns.</p>
+              </div>
+            </div>
+            <!-- END row 3 -->
+            <span class="footnote"></span> </div>
+        </div>
+      </div>
+      <!-- section 3 -->
+
+      <div id="divider_statement" class="divider bg_sizing"></div>
+
+
+      <!-- section 2 -->
+      
+      <div id="section_two_point_five" class="inner_container section_container clearfix">
+        <div class="block_container clearfix">
+          <div id="spacer" style="height:20px;">
+          </div>
+
+          <h2>The Pledge</h2>
+
+          <div class="paper">
+            <p>
+              <strong>The Candidates reject the following expenditures by any entity <em>unless</em> the funding source of the expenditure is clearly disclosed and can be traced back to one of the following:</strong>
+            </p>
+               <ul>
+                  
+                  <li>Individuals;</li>
+                  
+                  <li>a well known corporation with revenue from trade or commerce of at least $50 million for each of the past five years; or</li>
+                  
+                  <li>a nonprofit that has more than one million members, has been in existence for more than 10 years, has members in all 50 states and raises 15 percent or less of its funds from corporations.</li>
+                
+                </ul>
+              <a href="#" id="pledge-read-more">Read more...</a>
+              <ul id="pledge-remaining" class="hideme">
+              <!-- <ul> -->
+              
+              <ul>
+                <li><b>Rejected Undisclosed Expenditures.</b> The Candidates reject the following expenditures by any entity:
+                 <ul>
+                   <li><i>independent expenditures</i>, that is, any independent-expenditure television, radio, cable, satellite, or online advertising by a third party in support of or in opposition to a named, referenced (including by title), or otherwise identified Candidate;
+                   </li>
+                   <li><i>electioneering communications</i>, that is, any television, radio, cable, satellite, or online advertising by a third party that promotes, attacks, supports, or opposes a named, referenced (including by title), or otherwise identified Candidate; and
+                   </li>
+                   <li><i>coordinated communications</i>, that is, any paid advertisement that a Candidate or anyone acting on his or her behalf coordinates with a third party.
+                   </li>
+                 </ul>
+		</li>
+                <li><b>Countering Rejected Expenditures</b>. If any rejected expenditure is made, the Candidate that is advantaged by the rejected expenditure must, within three days of the expenditure, donate 50% of the cost of the rejected expenditure to a charity of the opposing Candidate’s choice.</li>
+               
+                <li><b>Resolution of Disputes</b>. If any dispute arises with regard to whether a rejected expenditure has been made, which Candidate has been advantaged by the rejected expenditure, the amount of the rejected expenditure, whether the rejected expenditure has been countered as described in this agreement, or any other question about the terms of this agreement, either Candidate may seek a determination from CounterPac, an independent, nonpartisan political organization dedicated to challenging and offsetting the effects of outside organizations on congressional campaigns. CounterPac’s determination will be binding on the Candidates.</li>
+                
+                <li><b>Counterweight Advertisements</b>. The Candidates acknowledge that if the advantaged Candidate fails to counter a rejected expenditure or for another legitimate reason, CounterPac may make an advertising buy in the same amount as the rejected expenditure either opposing the advantaged Candidate or in favor of the opposing Candidate. Any counterweight advertisement made by CounterPac is not considered a rejected expenditure.</li>
+
+                <li><b>Further Cooperation of the Candidates</b>. The Candidates will work together to limit the influence of third-party advertisements in the campaign and to close any loopholes that may be discovered in this agreement during the course of the campaign.</li>
+              </ul>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!--
+      <div id="divider_goals" class="divider bg_sizing"></div>
+      -->
+
+      <div id="section_two_point_six" class="inner_container section_container clearfix">
+        <div class="block_container clearfix">
+          <div id="spacer" style="height:20px;">
+          </div>
+            <div id="section_two_point_six_inner">
+              <div class="">
+                <h2>Frequently Asked Questions</h2>
+                <ul>
+                  <li>
+                    <span class="question">Who are you?</span><br/>
+                    <div class="answer">
+                      We are a group of concerned citizens who believe that unlimited dark money is corrupting our political system. We have backgrounds varying from tech entrepreneurs to political advisors. See below for a complete list.
+                    </div>
+                  </li>
+                  <li>
+                    <span class="question">Why would any politician take the CounterPAC pledge?</span><br/>
+                    <div class="answer">
+                      First and foremost, because most of them understand that getting secret money out of elections is good for America. But also, politicians want to run their own campaigns. Like anyone, they would prefer to tell their own story rather than have it told for them. But, like an arms race, they are unlikely to eliminate dark money unilaterally; they are much more willing to disarm if the other side disarms as well. Hence the bilateral nature of the pledge.
+                    </div>
+                  </li>
+                  <li>
+                    <span class="question">Why focus on untraceable “dark” money?</span><br/>
+                    <div class="answer">
+                      We need to start with something almost everyone supports. From Sen. Bernie Sanders of Vermont on the left to Sen. Ted Cruz of Texas on the right, leaders on both sides of the aisle have called for an end to secret campaign spending. By starting with a common-sense agreement, we can make a real impact in races this year without waiting for action by Congress or anyone else.
+                    </div>
+                  </li>
+                  <li>
+                    <span class="question">What makes you think this will work?</span><br/>
+                    <div class="answer">
+                      Because it already has. The Massachusetts Senate race in 2012 used a version of the pledge called “The People’s Pledge” that went even further than just requiring disclosure of donors and it worked. For details, see Common Cause&rsquo;s paper: <a href="http://www.commoncause.org/site/pp.asp?c=dkLNK1MQIwG&b=8664093" target="_blank">A Plea for the Pledge</a>
+                    </div>
+                  </li>
+                  <li>
+                    <span class="question">Who are your funders?</span><br/>
+                    <div class="answer">
+                    	CounterPAC is generously funded by the following individuals who are committed to restoring integrity to our elections:
+                    	<ul>
+                    		<li>
+                    			Jim Greer
+                    		</li>
+                    		<li>
+                    			Matt Cutts
+                    		</li>
+                    	</ul>
+                     </div>
+                  </li>
+                </ul>
+                <br/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- section 4 -->
+      <div id="section_four" class="inner_container section_container clearfix">
+        <div class="block_container clearfix">
+          <div id="take_action" class="section_four_inner clearfix">
+            <div class="tricolumn">
+              <h3 class="salmon">Take action</h3>
+              <h5>Connect</h5>
+              <div id="connect_icon_container" class="clearfix"> 
+                <div class="fb-like" data-href="https://www.facebook.com/counterpac.org" data-layout="standard" data-action="like" data-show-faces="false" data-share="true" width="80" style="padding-bottom:0.8em"></div>
+                <a href="https://twitter.com/counterpac" class="twitter-follow-button" data-show-count="false" data-lang="en"></a>
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+              </div>
+              <span class="connect_detail">3855 25th St, San Francisco, CA 94114<br />
+              <a href="mailto:info@counterpac.org">info@counterpac.org</a></span> 
+              <span class="connect_detail">415-529-5335</span>
+            </div>
+            <div class="tricolumn toppad">
+              <h5>Join our newsletter</h5>
+              <form action="http://counterpac.us3.list-manage.com/subscribe/post?u=005f754499096c8c9e23aa468&amp;id=fccf52aa7e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <input class="signup-form" id="mce-EMAIL" value="email" type="email" onfocus="if(this.value=='email') { this.value='' }" onblur="if(this.value=='') { this.value='email' }" name="EMAIL" />
+                <br />
+                <!--
+                <input class="signup-form" value="name" onfocus="if(this.value=='name') { this.value='' }" onblur="if(this.value=='') { this.value='name' }" name="NAME" />
+                <br />
+                <input class="signup-form" value="zip code" onfocus="if(this.value=='zip code') { this.value='' }" onblur="if(this.value=='') { this.value='zip code' }" name="ZIP" />
+                <br />
+              -->
+                <input name="sign up" type="submit" value="sign up" />
+              </form>
+            </div>
+          </div>
+
+          <div class="section_four_inner_dark clearfix">
+            <div class="tricolumn">
+              <h3>Learn more</h3>
+              <p>Get more information about how money actually affects democracy in light of our complex political system.</p>
+            </div>
+            <div class="tricolumn"> <span class="list_title">The Center for Responsive Politics</span>
+              <ul>
+                <li><a href="http://opensecrets.org" target="_blank">OpenSecrets.org</a></li>
+                <li><a href="http://www.opensecrets.org/influence/" target="_blank">Influence and Lobbying</a></li>
+                <li><a href="http://www.opensecrets.org/pacs/index.php" target="_blank">PACs and SuperPACs</a></li>
+                <li><a href="http://www.opensecrets.org/states/index.php?ql3&amp;srch=zip" target="_blank">Who Funds Your Rep?</a></li>
+              </ul>
+            </div>
+            <div class="tricolumn col_last"> <span class="list_title">Other sources</span>
+              <ul>
+                <li><a href="http://www.commoncause.org/site/pp.asp?c=dkLNK1MQIwG&b=8664093" target="_blank">Common Cause: A Plea for the Pledge</a></li>
+                <li><a href="http://en.wikipedia.org/wiki/Campaign_finance" target="_blank">Campaign finance</a></li>
+                <li><a href="http://en.wikipedia.org/wiki/Citizens_united" target="_blank">Citizens United ruling</a></li>
+                <li><a href="http://www.ted.com/talks/lawrence_lessig_we_the_people_and_the_republic_we_must_reclaim.html" target="_blank">TED Talk by Lawrence Lessig</a></li>
+                <li><a href="http://maplight.org" target="_blank">MapLight.org</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="section_four_inner_dark clearfix">
+            <div class="tricolumn">
+              <h3>Who we are</h3>
+              <p>We are a group of concerned citizens who see a need for change in our political system, and aren&rsquo;t willing to wait for Congress or the Supreme Court to fix the problem of unregulated anonymous money. </p>
+            </div>
+            <!-- START ACCORDION -->
+            <div id="accordion_container">
+              <div id="accordion">
+                <!-- START SECTION -->
+                <h3 id="one"><span class="propername">Jim Greer</span>, Co-Founder</h3>
+                <div class="clearfix"> 
+                <div class="contact_bar"><a href="http://twitter.com/jimgreer" target="_blank" class="contact_twitter"></a><a href="mailto:jim@counterpac.org" class="contact_email"></a></div>
+                  <div class="contact_details">
+                    <p>Jim Greer is the founder and CEO of Kongregate, a web and mobile platform that distributes over 80,000 games. Kongregate reaches over 18 million monthly visitors, and was acquired by GameStop in 2010. He has worked in the game industry since 1991 and holds a Computer Science degree from Princeton.</p>     
+                  </div>
+                </div>
+                <!-- END SECTION -->
+                <!-- START SECTION -->
+                <h3 id="two"><span class="propername">Zack Booth Simpson</span>, Co-Founder</h3>
+                <div class="clearfix">
+                <div class="contact_bar"><a href="mailto:zack@counterpac.org" class="contact_email"></a></div>
+                  <div class="contact_details">
+                    <p>Zack Booth Simpson is a Research Fellow at the University of Texas Center for Systems and Synthetic Biology. He has published papers in Nature, Cell, and other journals. He is also an interactive artist who has exhibited at dozens of museums, including Chicago&rsquo;s Museum of Science and Industry and New York&rsquo;s Hall of Science. He is self-educated.
+                    </p>
+                  </div>
+                </div>
+                <!-- END SECTION -->
+                <!-- START SECTION -->
+                <h3 id="two"><span class="propername">Mark McKinnon</span>, Campaign Guru</h3>
+                <div class="clearfix">
+                <div class="contact_bar"><a href="http://twitter.com/mmckinnon" target="_blank" class="contact_twitter"></a></div> 
+                  <div class="contact_details">
+                    <p>Mark McKinnon has solved complex strategic challenges for causes, companies and candidates, including President George W. Bush, Senator John McCain, Governor Ann Richards, Congressman Charlie Wilson and Bono. He has helped engineer five winning presidential primary and general elections. He is co-founder of No Labels, which seeks to promote a new politics of problem solving over point-scoring.</p>
+                  </div>
+                </div>
+                <!-- END SECTION -->
+
+                <!-- START SECTION -->
+                <h3 id="two"><span class="propername">Lawrence Lessig</span>, Commissioner</h3>
+                <div class="clearfix"> 
+                <div class="contact_bar"><a href="https://twitter.com/lessig" target="_blank" class="contact_twitter"></a></div>
+                  <div class="contact_details">
+                    <p>Lawrence Lessig is the Roy L. Furman Professor of Law at Harvard Law School, and Director of the Edmond J. Safra Center for Ethics at Harvard University. Prior to rejoining the Harvard faculty, Lessig was a professor at Stanford Law School, where he founded the school's Center for Internet and Society, and at the University of Chicago. He clerked for Judge Richard Posner on the 7th Circuit Court of Appeals and Justice Antonin Scalia on the United States Supreme Court. Lessig serves on the Board of Creative Commons, MAPLight, Brave New Film Foundation, The American Academy, Berlin, AXA Research Fund and iCommons.org, and is on the advisory board of the Sunlight Foundation. He is a Member of the American Academy of Arts and Sciences, and the American Philosophical Association, and has received numerous awards, including the Free Software Foundation's Freedom Award, Fastcase 50 Award and being named one of Scientific American's Top 50 Visionaries. Lessig holds a BA in economics and a BS in management from the University of Pennsylvania, an MA in philosophy from Cambridge, and a JD from Yale.
+                    </p>
+                  </div>
+                </div>
+                <!-- END SECTION -->
+
+                <!-- START SECTION -->
+                <h3 id="two"><span class="propername">Richard Painter</span>, Commissioner</h3>
+                <div class="clearfix"> 
+                  <div class="contact_details">
+                    <p>Richard W. Painter is the S. Walter Richey Professor of Corporate Law at the University of Minnesota. He received his B.A., summa cum laude, in history from Harvard University and his J.D. from Yale University. He clerked for Judge John T. Noonan Jr., of the United States Court of Appeals for the Ninth Circuit and later practiced at Sullivan &amp; Cromwell in New York City and Finn Dixon &amp; Herling in Stamford, Connecticut.</p>
+
+                    <p>From 2005-2007, he was Associate Counsel to President George W. Bush in the White House Counsel's office, serving as the chief ethics lawyer for the President, White House employees and senior nominees to Senate-confirmed positions in the Executive Branch. He is a member of the American Law Institute and is an advisor for the new ALI Principles of Government Ethics. He has also been active in the Professional Responsibility Section of the American Bar Association.
+                    </p>
+                  </div>
+                </div>
+                <!-- END SECTION -->
+                
+		<!-- START SECTION -->
+                <h3 id="two"><span class="propername">Buddy Roemer</span>, Commissioner</h3>
+                <div class="clearfix">
+                <div class="contact_bar"><a href="http://twitter.com/BuddyRoemer" target="_blank" class="contact_twitter"></a></div>
+                  <div class="contact_details">
+                    <p>Buddy Roemer is the chairman of The Reform Project, a non-partisan organization fighting the unfair use of money in politics. Previously, he served as the 52nd Governor of Louisiana from 1988 to 1992, and as a member of the United States House of Representatives from 1981 to 1988. He also founded two banks.</p>
+                  </div>
+                </div>
+                <!-- END SECTION -->
+                <!-- START SECTION -->
+                <h3 id="two"><span class="propername">Trevor Potter</span>, Legal Counsel</h3>
+                <div class="clearfix"> 
+                <div class="contact_bar"><a href="http://twitter.com/thetrevorpotter" target="_blank" class="contact_twitter"></a></div>
+                  <div class="contact_details">
+                    <p>Trevor Potter is an attorney at Caplin &amp; Drysdale in Washington, D.C. and leads the firm's Political Law Practice. He is a former Chairman of the Federal Election Commission and served as General Counsel to John McCain&rsquo;s 2008 and 2000 presidential campaigns. He now represents Stephen Colbert and his SuperPAC and advises him on campaign finance issues on and off the air.</p>
+                  </div>
+                </div>
+                <!-- END SECTION -->
+
+                <!-- START SECTION -->
+                <h3 id="two"><span class="propername">Matt Cutts</span>, Founding Donor</h3>
+                <div class="clearfix"> 
+                <div class="contact_bar"><a href="http://twitter.com/mattcutts" target="_blank" class="contact_twitter"></a></div>
+                  <div class="contact_details">
+                    <p>Matt Cutts is head of Google&rsquo;s Webspam team, and a major
+                      public face for explaining how search works to webmasters.
+                      He wrote the first version of SafeSearch, Google&rsquo;s family
+                      friendly filter.
+                    </p>
+                  </div>
+                </div>
+                <!-- END SECTION -->
+                
+
+                <!-- START SECTION -->
+                <!--
+                <h3 id="two"><span class="propername">Jon Hutchens</span>, Political Advisor</h3>
+                <div class="clearfix"> 
+                
+                  <div class="contact_details">
+                    <p>Jon Hutchens is president of Media Strategies &amp; Research which is
+                      one of the largest political media placement and strategy firms in the
+                      country.  Jon has been involved in elections throughout the country helping
+                      to elect candidates for president, U.S. Senate and Congress, governors and mayors.
+                    </p>
+                  </div>
+                </div>
+              -->
+                <!-- END SECTION -->
+
+                <!-- START SECTION -->
+                <h3 id="two"><span class="propername">Kahlil Byrd</span>, Political Advisor</h3>
+                <div class="clearfix"> 
+                
+                  <div class="contact_details">
+                    <p>
+                      Kahlil Byrd is a political entrepreneur. Currently, he serves as Chief Investment Officer for the Fund for the Republic. As former CEO of Americans Elect and president of StudentsFirst, Kahlil has extensive experience building and guiding complex national organizations, gathering resources to power innovative reform ideas, and operating in national politics.
+                    </p>
+                  </div>
+                </div>
+                <!-- END SECTION -->
+                <!-- START SECTION -->
+                 <h3 id="two"><span class="propername">Robin Beck</span>, Strategy Director</h3>
+                <div class="clearfix"> 
+                <div class="contact_bar"><a href="http://twitter.com/beckcommar" target="_blank" class="contact_twitter"></a></div>
+                  <div class="contact_details">
+                    <p>Robin Beck is a veteran online organizer and campaign strategist. He is a former Campaign Director at MoveOn.org and previously ran the online organizing programs at Change.org and Rainforest Action Network.
+                    </p>
+                  </div>
+                </div>
+                <!-- END SECTION -->
+		<!-- START SECTION -->
+                <h3 id="two"><span class="propername">Jay Costa</span>, Campaign Director</h3>
+                <div class="clearfix"> 
+                <div class="contact_bar"><a href="http://twitter.com/jayjco" target="_blank" class="contact_twitter"></a></div>
+                  <div class="contact_details">
+                    <p>Jay Costa has a deep background working for transparency and reform surrounding money in politics. He previously served as Program Director at MapLight, where he led the organization's web and data projects, and as a National Coordinator for Rootstrikers.
+                    </p>
+                  </div>
+                </div>
+                <!-- END SECTION -->
+               <!-- START SECTION -->
+                <h3 id="two"><span class="propername">William Winters</span>, Campaign Strategist</h3>
+                <div class="clearfix"> 
+                <div class="contact_bar"><a href="http://twitter.com/wwintersiii" target="_blank" class="contact_twitter"></a></div>
+                  <div class="contact_details">
+                    <p>William Winters has a played a key strategic role in a number of campaigns, including at Change.org, ColorOfChange.org, and Presente.org.
+                    </p>
+                  </div>
+                </div>
+                <!-- END SECTION -->
+              </div>
+            </div>
+            <!-- END ACCORDION -->
+          </div>
+        </div>
+      </div>
+      <!-- section 4 -->
+      <div class="divider_footer  clearfix"> <span class="lft_txt">PAID FOR BY COUNTERPAC | NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE</span> <span class="rt_txt">&copy; 2014 COUNTERPAC. ALL RIGHTS RESERVED.&nbsp;&nbsp;&nbsp;<a id="privacy-policy-link">Privacy policy</a></span> 
+      <img src="images/footer_logo_1.png" id="footerlogo" />
+      <a href="#section_home" id="back_to_top" class="nav_item">back to top</a>
+      
+      </div>
+      <!-- footer -->
+      <div id="section_footer" style="display:none;">
+        <div id="section_footer_inner" class="clearfix">
+          <div class="footer_col">
+            <h5>Privacy Policy</h5>
+            <p>CounterPAC is committed to protecting your privacy online. While using our website, you do not have to identify yourself or divulge personal information. If you should choose to give us your personal information, you decide the amount of information you provide.</p>
+            <p>Our mission is to give citizens the information they need in a timely manner. As a result, we may periodically ask you to provide information such as your name, address, phone number and email address in an effort to enhance our ability to work with you as an online supporter.</p>
+            <p>In the event you make a donation, CounterPac will use the information you provide only to complete your donation and to provide you with tools to manage and monitor your transactions. CounterPac will not share, rent or sell this information to any third parties without your consent, except that your credit card and other personal information will be shared with our credit card processor and then only to process the transaction.</p>
+            <p>This privacy policy may be amended by CounterPAC at any time without notice other than posting of such amendments on this site.</p>
+            <p>CounterPAC will not sell your email address or other personal information to an outside, unaffiliated organization or any unauthorized third parties.</p>
+          </div>
+        </div>
+      </div>
+      <!-- END footer -->
+    </div>
+  </div>
+</div>
+<script src="js/custom_scripts.js"></script>
+<script>
+	//frame animation
+		$(function(){
+			//$(".dollaranimation").frameAnimation({delay:90, mouseOut:false, repeat:1, imageHeight:1160 });
+		});
+
+	</script>
+<script src="js/jquery.scrolldepth.js"></script>
+<script>
+    $.scrollDepth({
+      testing: true,
+      elements: ['#section_video', '#section_one', '#section_two', '#section_three', '#section_four']
+    });
+  </script>
 </body>
 </html>
