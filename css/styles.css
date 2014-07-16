@@ -1179,7 +1179,7 @@ h4{
 @media (max-width: 480px) { 
 	.paper {
 		font-size:2.1em;
-		min-height: 320px;
+		min-height: 360px;
 	}
 	
 	.paper li{
