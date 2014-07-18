@@ -336,7 +336,7 @@ body {
 	background-image:url('../images/bg_diamond.png');
 	height: 0;
 	padding-top:5.7%;
-	padding-bottom: 101.5%;
+	padding-bottom: 118.5%;
 }
 .section_four_inner{
 	margin:0 4.7% .625% 4.7%;
@@ -347,6 +347,10 @@ body {
 	margin:0 4.7% .625% 4.7%;
 	padding:3.1%;
 	background-image:url('../images/bg_olive_70.png');
+}
+
+#who_we_are {
+	padding-bottom: 12% !important;
 }
 .bg_sizing{
 	background-repeat:no-repeat;
@@ -510,7 +514,7 @@ body {
 }
 #footerlogo{
 	position:absolute;
-	left:43.5%;
+	left:44%;
 	width:16.77%;
 	top:-79%;
 }
