@@ -1268,7 +1268,7 @@ html[xmlns] .clearfix {
 
 .subpage-container {
 	margin-top:-20%;
-	padding-bottom:40% !important;
+	padding-bottom:60% !important;
 }
 
 .subpage-subheader h5 {
@@ -1279,6 +1279,3 @@ html[xmlns] .clearfix {
 	color:#6c6a5b;
 }
 
-#campaign-image {
-	width:20%;
-}
