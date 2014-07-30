@@ -1279,3 +1279,6 @@ html[xmlns] .clearfix {
 	color:#6c6a5b;
 }
 
+#campaign-image {
+	max-width:30%;
+}
