@@ -1268,7 +1268,7 @@ html[xmlns] .clearfix {
 
 .subpage-container {
 	margin-top:-20%;
-	padding-bottom:60% !important;
+	padding-bottom:50% !important;
 }
 
 .subpage-subheader h5 {
@@ -1279,6 +1279,19 @@ html[xmlns] .clearfix {
 	color:#6c6a5b;
 }
 
+.ad-index {
+	margin:auto; 
+	width:100%; 
+	font: normal 1.4em 'Cubano-regular', Arial, Helvetica, sans-serif;
+}
+
+.ad-info {
+	font-size:.7em;
+	font-style:italic;
+}
+
 #campaign-image {
 	max-width:30%;
 }
+
+
