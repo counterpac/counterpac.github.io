@@ -488,7 +488,7 @@ body {
 }
 .divider_footer .lft_txt{
 	float:left;
-	width:43%;
+	width:39%;
 	text-align:center;
 	line-height:initial;
 }
@@ -514,7 +514,7 @@ body {
 }
 #footerlogo{
 	position:absolute;
-	left:44%;
+	left:41%;
 	width:16.77%;
 	top:-79%;
 }
