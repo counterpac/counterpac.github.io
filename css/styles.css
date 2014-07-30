@@ -1266,3 +1266,19 @@ html[xmlns] .clearfix {
 	height: 1%;
 }
 
+.subpage-container {
+	margin-top:-20%;
+	padding-bottom:40% !important;
+}
+
+.subpage-subheader h5 {
+	float:left;
+	margin-right:5%;
+	margin-top:-2%;
+	font: normal 1.7em/1em 'Cubano-regular', Arial, Helvetica, sans-serif;
+	color:#6c6a5b;
+}
+
+#campaign-image {
+	width:20%;
+}
