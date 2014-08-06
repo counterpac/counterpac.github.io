@@ -1294,4 +1294,11 @@ html[xmlns] .clearfix {
 	max-width:30%;
 }
 
+#action-image {
+	min-width:20%;
+}
+
+.action-info {
+	font-size: 1.4em;
+}
 
