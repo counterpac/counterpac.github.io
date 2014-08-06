@@ -1294,12 +1294,21 @@ html[xmlns] .clearfix {
 	max-width:30%;
 }
 
+.action-header {
+	font-size:2em;
+}
+
+.action-container{
+	margin:auto;
+}
+
 .action-block {
 	float:left;
 }
 
 #action-image {
-	max-width:50% !important;
+	max-width:75 !important;
+	margin:auto;
 }
 
 .action-info {
