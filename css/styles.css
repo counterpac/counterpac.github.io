@@ -1295,7 +1295,7 @@ html[xmlns] .clearfix {
 }
 
 #action-image {
-	min-width:20% !important;
+	width:20% !important;
 }
 
 .action-info {
