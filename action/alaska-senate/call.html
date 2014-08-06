@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>CounterPAC</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+<link href="css/styles.css?v=3" rel="stylesheet" type="text/css" />
+
+<link rel="icon" type="image/png" href="favicon.png" />
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+<![endif]-->
+<!--[if lte IE 8]>
+	<link rel="stylesheet" type="text/css" href="css/ie8-and-down.css" />
+<![endif]-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" language="javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.frame.animation.1.1.2.js"></script>
+<script type="text/javascript" language="javascript" src="js/frame_animate.js"></script>
+<script type="text/javascript" language="javascript" src="js/jquery.validate.min.js"></script>
+<!-- carousel -->
+<script type="text/javascript" language="javascript">
+			$(function() {
+
+				//	Responsive layout, resizing the items
+				$('#carousel').carouFredSel({
+					auto: {
+            duration: 1000,
+						pauseOnHover: true,
+						play: true
+					},
+					prev: '#prev1',
+					next: '#next1',
+					responsive: true,
+					width: '100%',
+					scroll: 1,
+					swipe: {
+						onMouse: true,
+						onTouch: true
+					},
+					pagination: {
+						container : "#pagination",
+						anchorBuilder   : function(nr) {
+							return '<a href="#'+nr+'"><span>&bull;</span></a>';
+						}
+					},
+					items: {
+						width: 400,
+					//	height: '30%',	//	optionally resize item-height
+						visible: {
+							min: 1,
+							max: 1
+						}
+					}
+				});
+
+
+			});
+</script>
+<script type="text/javascript" language="javascript">
+// form validation
+$().ready(function() {
+    $("#privacy-policy-link").click( function() {
+      $("#section_footer").slideDown();
+      $("html, body").animate({ scrollTop: $(document).height() } );
+      return false;
+    });
+
+		$("#subForm").validate({
+		rules: {
+			email: {
+				required: true,
+				email: true
+			}
+		},
+		messages: {
+			email: "Please enter a valid email address"
+		}
+	});
+
+  $("#pledge-read-more").click( function() {
+    $("#pledge-remaining").removeClass( "hideme" );
+    $("#pledge-read-more").addClass( "hideme" );
+    $("#section_two_point_five").css( "padding-bottom", "110%" );
+    return false;
+  });
+
+  $(".question").click( function() {
+    $(this).siblings(".answer").toggleClass( "hideme" );
+  });
+
+
+  $("#donate").click( function() {
+    document.location = "https://counterpac.wufoo.com/forms/z1ikvqls15oia2i/";
+  });
+
+
+
+	/*$("#donationForm").validate({
+		rules: {
+			name: "required",
+			email: {
+				required: true,
+				email: true
+			},
+			amount: {
+				required: true,
+				number: true
+			}
+		},
+		messages: {
+			name: "Please enter your name",
+			email: "Please enter a valid email address",
+			amount: {
+				required: "Please enter a donation amount",
+				number: "Donation amount must be a number"
+			}
+		}
+	});*/
+
+});
+</script>
+<!-- Analytics  -->
+<script type="text/javascript" language="javascript">
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	
+	  ga('create', 'UA-41841100-1', 'counterpac.org');
+	  ga('send', 'pageview');
+</script>
+<script type="text/javascript" language="javascript">
+  $(function() {
+    $( "#accordion" ).accordion({
+      collapsible: true,
+	  active: false,
+	  icons: { "header": "ui-icon-down", "activeHeader": "ui-icon-up" },
+	  heightStyle: "content"
+    });
+  });
+</script>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=204262023106809";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    <div id="topbar_container">
+  <div id="topbar"></div>
+  <div id="closebox"></div>
+</div>
+<div id="scale_container">
+  <div id="social_nav_container">
+    <div id="social_nav"> 
+      <a href="https://www.facebook.com/counterpac.org" target="_blank" id="fb"></a> <a href="https://twitter.com/counterpac" target="_blank" id="twitter"></a>
+    </div>
+  </div>
+  <!--
+  <div id="nav_container">
+    <div id="fancynav">
+
+        <a href="#section_one" id="nav_section_one" class="nav_item">problem</a>
+        &bull;
+        <a href="#section_two" id="nav_section_two" class="nav_item">solution</a>
+        &bull;
+        <a href="#section_three" id="nav_section_three" class="nav_item">how it works</a>
+        &bull;
+        <a href="#section_four" id="nav_section_four" class="nav_item">take action</a>
+        &bull;
+        <a id="nav_share" class="nav_item">share</a>
+    </div>
+  </div>
+  -->
+  <div id="outer_main">
+    <div id="inner_main">
+      <!-- home -->
+      <div id="section_home" class="inner_container bg_sizing">
+        <div class="block_container clearfix">
+          <div class="centercol">
+            <a href="http://www.counterpac.org"><img src="images/home_medallion_1.png" id="medallion" /></a>
+          </div>
+        </div>
+      </div>
+      <!-- home -->
+      
+
+      <!-- section 4 -->
+      <div id="section_four" class="inner_container section_container subpage-container clearfix">
+        <div class="block_container clearfix">
+          <div id="take_action" class="section_four_inner clearfix">
+            <div class="subpage-subheader">
+              <h3 class="salmon">Call these candidates and tell them to say NO to secret money!</h3>
+              <h5>Hearing from you will make a difference.</h5>
+              <br style="clear:both;" />  
+            <br />
+            <table class="ad-index">
+            	<tbody>
+            		<tr>
+            			<td>
+            				Mark Begich
+            			</td>
+            			<td >
+            				Dan Sullivan
+            			</td>
+            			<td>
+            				Mead Treadwell
+            			</td>
+            			<td>
+            				Joe Miller
+            			</td>
+            		</tr>
+            		<tr>
+            			<td>
+            				<a href=""><img id="campaign-image" src="http://www.counterpac.org/images/begich.jpg" /></a>
+            			</td>
+            			<td >
+            				<a href="http://www.counterpac.org/images/sullivan.jpg"><img id="campaign-image" src="http://www.counterpac.org/images/sullivan.jpg" /></a>
+            			</td>
+            			<td>
+            				<a href="http://www.counterpac.org/images/treadwell.jpg"><img id="campaign-image" src="http://www.counterpac.org/images/treadwell.jpg" /></a>
+            			</td>
+            			<td>
+            				<a href="http://www.counterpac.org/images/miller.jpg"><img id="campaign-image" src="http://www.counterpac.org/images/miller.jpg" /></a>
+            			</td>
+            		</tr>
+            		
+            		<tr>
+            			<td class="ad-info">
+            				907-271-5915
+            			</td>
+            			<td class="ad-info">
+            				907-677-2014
+            			</td>
+            			<td class="ad-info">
+            				907-444-1231
+            			</td>
+            			<td class="ad-info">
+            				907-451-8559
+            			</td>
+            		</tr>
+
+            	</tbody>
+            </table>
+            
+            </div>
+          </div>
+
+          
+         
+        </div>
+      </div>
+      <!-- section 4 -->
+      <div class="divider_footer  clearfix"> <span class="lft_txt">PAID FOR BY COUNTERPAC | NOT AUTHORIZED BY ANY CANDIDATE OR CANDIDATE'S COMMITTEE</span> <span class="rt_txt">&copy; 2014 COUNTERPAC. ALL RIGHTS RESERVED.&nbsp;&nbsp;&nbsp;<a id="privacy-policy-link">Privacy policy</a></span> 
+      <img src="images/footer_logo_1.png" id="footerlogo" />
+      <a href="#section_home" id="back_to_top" class="nav_item">back to top</a>
+      
+      </div>
+      <!-- footer -->
+      <div id="section_footer" style="display:none;">
+        <div id="section_footer_inner" class="clearfix">
+          <div class="footer_col">
+            <h5>Privacy Policy</h5>
+            <p>CounterPAC is committed to protecting your privacy online. While using our website, you do not have to identify yourself or divulge personal information. If you should choose to give us your personal information, you decide the amount of information you provide.</p>
+            <p>Our mission is to give citizens the information they need in a timely manner. As a result, we may periodically ask you to provide information such as your name, address, phone number and email address in an effort to enhance our ability to work with you as an online supporter.</p>
+            <p>In the event you make a donation, CounterPac will use the information you provide only to complete your donation and to provide you with tools to manage and monitor your transactions. CounterPac will not share, rent or sell this information to any third parties without your consent, except that your credit card and other personal information will be shared with our credit card processor and then only to process the transaction.</p>
+            <p>This privacy policy may be amended by CounterPAC at any time without notice other than posting of such amendments on this site.</p>
+            <p>CounterPAC will not sell your email address or other personal information to an outside, unaffiliated organization or any unauthorized third parties.</p>
+          </div>
+        </div>
+      </div>
+      <!-- END footer -->
+    </div>
+  </div>
+</div>
+<script src="js/custom_scripts.js"></script>
+<script>
+	//frame animation
+		$(function(){
+			//$(".dollaranimation").frameAnimation({delay:90, mouseOut:false, repeat:1, imageHeight:1160 });
+		});
+
+	</script>
+<script src="js/jquery.scrolldepth.js"></script>
+<script>
+    $.scrollDepth({
+      testing: true,
+      elements: ['#section_video', '#section_one', '#section_two', '#section_three', '#section_four']
+    });
+  </script>
+</body>
+</html>
