@@ -1294,6 +1294,10 @@ html[xmlns] .clearfix {
 	max-width:30%;
 }
 
+.action-block {
+	float:left;
+}
+
 #action-image {
 	max-width:50% !important;
 }
