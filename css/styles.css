@@ -1295,8 +1295,8 @@ html[xmlns] .clearfix {
 }
 
 .action-header {
-	font-size:3em !important;
-	margin:auto;
+	font-size:3.6em !important;
+	text-align:center;
 }
 
 .action-container{
