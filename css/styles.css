@@ -1295,10 +1295,10 @@ html[xmlns] .clearfix {
 }
 
 #action-image {
-	min-width:20%;
+	min-width:20% !important;
 }
 
 .action-info {
-	font-size: 1.4em;
+	font-size: 1.4em !important;
 }
 
