@@ -1295,15 +1295,19 @@ html[xmlns] .clearfix {
 }
 
 .action-header {
-	font-size:2em;
+	font-size:3em !important;
+	margin:auto;
 }
 
 .action-container{
-	margin:auto;
+	margin:auto !important;
+	width:100%;
+	font: normal 1.4em 'Cubano-regular', Arial, Helvetica, sans-serif;
 }
 
 .action-block {
 	float:left;
+	margin:auto;
 }
 
 #action-image {
