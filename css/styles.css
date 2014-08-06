@@ -1311,7 +1311,7 @@ html[xmlns] .clearfix {
 }
 
 #action-image {
-	max-width:75 !important;
+	max-width:75% !important;
 	margin:auto;
 }
 
