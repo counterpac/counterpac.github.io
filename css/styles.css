@@ -1317,7 +1317,7 @@ html[xmlns] .clearfix {
 .action-content {
 	font: 1.8em/1.6em 'National-Book', Arial, Helvetica, sans-serif;
 	text-align: left;
-	margin-bottom: 5%;
+	margin-bottom: 5% !important;
 }
 
 .action-content h5 {
