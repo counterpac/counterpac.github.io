@@ -1321,7 +1321,8 @@ html[xmlns] .clearfix {
 }
 
 .action-content h5 {
-	font: normal 1.7em/1em 'Cubano-regular', Arial, Helvetica, sans-serif;
+	clear:both;
+	font: normal 1em 'Cubano-regular', Arial, Helvetica, sans-serif;
 	color:#6c6a5b;
 }
 
