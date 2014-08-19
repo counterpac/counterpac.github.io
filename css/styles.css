@@ -1309,6 +1309,17 @@ html[xmlns] .clearfix {
 	margin-bottom:5%;
 }
 
+.action-inner {
+	margin:auto;
+	text-align:center;
+}
+
+.action-block {
+	float:left;
+	margin:auto;
+	margin-bottom:5%;
+}
+
 .action-video{
 	min-width: 60%; 
 	height: 315px;
@@ -1331,11 +1342,6 @@ html[xmlns] .clearfix {
 	color:#6c6a5b;
 }
 
-.action-block {
-	float:left;
-	margin:auto;
-	margin-bottom:5%;
-}
 
 #action-image {
 	max-width:75% !important;
