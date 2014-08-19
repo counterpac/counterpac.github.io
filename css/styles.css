@@ -1333,6 +1333,7 @@ html[xmlns] .clearfix {
 .action-block {
 	float:left;
 	margin:auto;
+	margin-bottom:5%;
 }
 
 #action-image {
