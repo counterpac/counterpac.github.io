@@ -1312,6 +1312,7 @@ html[xmlns] .clearfix {
 .action-inner {
 	margin:auto;
 	text-align:center;
+	display:inline-block;
 }
 
 .action-block {
