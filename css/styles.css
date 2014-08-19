@@ -1303,11 +1303,19 @@ html[xmlns] .clearfix {
 .action-container{
 	margin:auto !important;
 	width:100%;
+	max-width: 100%;
 	font: normal 1.4em 'Cubano-regular', Arial, Helvetica, sans-serif;
+}
+
+.action-container iframe{
+	width: 560 px; 
+	height: 315px;
+	max-width:100%;
 }
 
 .action-content {
 	font: 1.8em/1.6em 'National-Book', Arial, Helvetica, sans-serif;
+	text-align: left;
 }
 
 .action-block {
