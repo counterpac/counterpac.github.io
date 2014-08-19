@@ -1310,7 +1310,6 @@ html[xmlns] .clearfix {
 .action-container iframe{
 	width: 560 px; 
 	height: 315px;
-	max-width:100%;
 }
 
 .action-content {
