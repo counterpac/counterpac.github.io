@@ -1306,6 +1306,10 @@ html[xmlns] .clearfix {
 	font: normal 1.4em 'Cubano-regular', Arial, Helvetica, sans-serif;
 }
 
+.action-content {
+	font: 1.8em/1.6em 'National-Book', Arial, Helvetica, sans-serif;
+}
+
 .action-block {
 	float:left;
 	margin:auto;
