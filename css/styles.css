@@ -1307,9 +1307,10 @@ html[xmlns] .clearfix {
 	font: normal 1.4em 'Cubano-regular', Arial, Helvetica, sans-serif;
 }
 
-.action-container iframe{
+.action-video{
 	width: 560 px; 
 	height: 315px;
+	max-width:100%;
 }
 
 .action-content {
