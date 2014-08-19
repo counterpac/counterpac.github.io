@@ -1276,7 +1276,7 @@ html[xmlns] .clearfix {
 	float:left;
 	margin-right:5%;
 	margin-top:-2%;
-	font: normal 1.7em/1em 'Cubano-regular', Arial, Helvetica, sans-serif;
+	font: normal 1em 'Cubano-regular', Arial, Helvetica, sans-serif;
 	color:#6c6a5b;
 }
 
@@ -1305,6 +1305,7 @@ html[xmlns] .clearfix {
 	width:100%;
 	max-width: 100%;
 	font: normal 1.4em 'Cubano-regular', Arial, Helvetica, sans-serif;
+	margin-bottom:5%;
 }
 
 .action-video{
@@ -1317,7 +1318,6 @@ html[xmlns] .clearfix {
 .action-content {
 	font: 1.8em/1.6em 'National-Book', Arial, Helvetica, sans-serif;
 	text-align: left;
-	margin-bottom: 5% !important;
 }
 
 .action-content h5 {
