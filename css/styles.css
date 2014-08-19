@@ -1268,7 +1268,8 @@ html[xmlns] .clearfix {
 
 .subpage-container {
 	margin-top:-20%;
-	padding-bottom:50% !important;
+	height:100% !important;
+	padding-bottom:10% !important;
 }
 
 .subpage-subheader h5 {
@@ -1317,5 +1318,12 @@ html[xmlns] .clearfix {
 
 .action-info {
 	font-size: 1.4em !important;
+}
+
+@media (max-width: 480px) { 
+
+	.subpage-medallion {
+	
+	}
 }
 
