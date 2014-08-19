@@ -1286,6 +1286,11 @@ html[xmlns] .clearfix {
 	font: normal 1.4em 'Cubano-regular', Arial, Helvetica, sans-serif;
 }
 
+.ad-index td {
+	font: 1.8em/1.6em 'National-Book', Arial, Helvetica, sans-serif;
+	border-top: solid 1px #DADFDB;
+}
+
 .ad-info {
 	font-size:.7em;
 	font-style:italic;
