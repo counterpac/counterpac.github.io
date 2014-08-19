@@ -1308,9 +1308,10 @@ html[xmlns] .clearfix {
 }
 
 .action-video{
-	width: inherit; 
+	min-width: 60%; 
 	height: 315px;
 	max-width:100%;
+	margin-bottom:10%;
 }
 
 .action-content {
