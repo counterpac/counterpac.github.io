@@ -1302,6 +1302,7 @@ html[xmlns] .clearfix {
 
 .action-container{
 	margin:auto !important;
+	text-align:center;
 	width:100%;
 	max-width: 100%;
 	font: normal 1.4em 'Cubano-regular', Arial, Helvetica, sans-serif;
