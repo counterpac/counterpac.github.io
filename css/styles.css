@@ -1276,7 +1276,7 @@ html[xmlns] .clearfix {
 	float:left;
 	margin-right:5%;
 	margin-top:-2%;
-	font: normal 1em 'Cubano-regular', Arial, Helvetica, sans-serif !important;
+	font: normal 1em/1.7em 'Cubano-regular', Arial, Helvetica, sans-serif !important;
 	color:#6c6a5b;
 }
 
