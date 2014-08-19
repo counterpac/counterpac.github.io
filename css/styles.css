@@ -1320,6 +1320,11 @@ html[xmlns] .clearfix {
 	margin-bottom: 5%;
 }
 
+.action-content h5 {
+	font: normal 1.7em/1em 'Cubano-regular', Arial, Helvetica, sans-serif;
+	color:#6c6a5b;
+}
+
 .action-block {
 	float:left;
 	margin:auto;
