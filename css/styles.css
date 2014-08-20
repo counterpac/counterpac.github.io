@@ -1077,7 +1077,7 @@ h4{
 		width:50%;
 	}
 	#section_four {
-		padding-bottom: 220% !important;
+		padding-bottom: 260% !important;
 	}
 	.divider_footer {
 		line-height:1.2em !important;
@@ -1109,7 +1109,7 @@ h4{
 } 
 @media (max-width: 550px) { 
 	#section_four{
-		padding-bottom: 220%;
+		padding-bottom: 260%;
 	}
 } 
 @media (max-width: 568px) { /* iPhone 5 horizontal */
@@ -1139,7 +1139,7 @@ h4{
 } 
 @media (max-width: 470px) { 
 	#section_four{
-		padding-bottom: 230%;
+		padding-bottom: 260%;
 	}
 } 
 @media (max-width: 1055px) { 
