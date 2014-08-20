@@ -1289,7 +1289,7 @@ html[xmlns] .clearfix {
 .ad-index td {
 	font: 1.4em/1.6em 'National-Book', Arial, Helvetica, sans-serif;
 	border-top: solid 1px #DADFDB;
-	padding: 2%;
+	padding: 1%;
 }
 
 .ad-info {
@@ -1302,7 +1302,7 @@ html[xmlns] .clearfix {
 }
 
 .vid-thumb{
-	min-width: 50%;
+	max-width: 90%;
 }
 
 .action-header {
