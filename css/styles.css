@@ -1303,7 +1303,7 @@ html[xmlns] .clearfix {
 }
 
 .vid-thumb{
-	width: 50%;
+	min-width: 50%;
 }
 
 .action-header {
