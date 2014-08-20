@@ -349,9 +349,7 @@ body {
 	background-image:url('../images/bg_olive_70.png');
 }
 
-#who_we_are {
-	padding-bottom: 20% !important;
-}
+
 .bg_sizing{
 	background-repeat:no-repeat;
 	background-position:top left;
@@ -1079,7 +1077,7 @@ h4{
 		width:50%;
 	}
 	#section_four {
-		padding-bottom: 185% !important;
+		padding-bottom: 220% !important;
 	}
 	.divider_footer {
 		line-height:1.2em !important;
@@ -1111,7 +1109,7 @@ h4{
 } 
 @media (max-width: 550px) { 
 	#section_four{
-		padding-bottom: 180%;
+		padding-bottom: 220%;
 	}
 } 
 @media (max-width: 568px) { /* iPhone 5 horizontal */
@@ -1383,6 +1381,6 @@ html[xmlns] .clearfix {
 }
 
 .accordion-padtop {
-	margin-top:5px !important;
+	margin-top:1% !important;
 }
 
