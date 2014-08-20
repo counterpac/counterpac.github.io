@@ -146,6 +146,14 @@ $().ready(function() {
 	  heightStyle: "content"
     });
   });
+  $(function() {
+    $( "#accordion_two" ).accordion({
+      collapsible: true,
+	  active: false,
+	  icons: { "header": "ui-icon-down", "activeHeader": "ui-icon-up" },
+	  heightStyle: "content"
+    });
+  });
 </script>
 </head>
 <body>
@@ -181,6 +189,8 @@ $().ready(function() {
         <a href="#section_three" id="nav_section_three" class="nav_item">how it works</a>
         &bull;
         <a href="#section_four" id="nav_section_four" class="nav_item">take action</a>
+        &bull;
+        <a href="#learn_more" id="nav_learn_more" class="nav_item">learn more</a>
         &bull;
         <a id="nav_share" class="nav_item">share</a>
     </div>
@@ -540,7 +550,7 @@ $().ready(function() {
               <span class="connect_detail">415-529-5335</span>
             </div>
             <div class="tricolumn toppad">
-              <h5>Join our newsletter</h5>
+              <h5 id="learn_more">Join our newsletter</h5>
               <form action="http://counterpac.us3.list-manage.com/subscribe/post?u=005f754499096c8c9e23aa468&amp;id=fccf52aa7e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                 <input class="signup-form" id="mce-EMAIL" value="email" type="email" onfocus="if(this.value=='email') { this.value='' }" onblur="if(this.value=='') { this.value='email' }" name="EMAIL" />
                 <br />
@@ -585,6 +595,7 @@ $().ready(function() {
             </div>
             <!-- START ACCORDION -->
             <div id="accordion_container">
+             <div class="section_subhead">Our Team</div>
               <div id="accordion">
                 <!-- START SECTION -->
                 <h3 id="one"><span class="propername">Jim Greer</span>, Co-Founder</h3>
@@ -742,6 +753,81 @@ $().ready(function() {
               </div>
             </div>
             <!-- END ACCORDION -->
+            
+            <!-- START ACCORDION -->
+            <div id="accordion_container">
+             <div class="section_subhead padtop">Our Funders</div>
+              <div id="accordion_two">
+                <!-- START SECTION -->
+                <h3 id="one" class="accordion-padtop"><span class="propername">Jim Greer</span>, Co-Founder</h3>
+                <div class="clearfix"> 
+                <div class="contact_bar"><a href="http://twitter.com/jimgreer" target="_blank" class="contact_twitter"></a><a href="mailto:jim@counterpac.org" class="contact_email"></a></div>
+                  <div class="contact_details">
+                    <p>Jim Greer is the founder and CEO of Kongregate, a web and mobile platform that distributes over 80,000 games. Kongregate reaches over 18 million monthly visitors, and was acquired by GameStop in 2010. He has worked in the game industry since 1991 and holds a Computer Science degree from Princeton.</p>     
+                  </div>
+                </div>
+                <!-- END SECTION -->
+                <!-- START SECTION -->
+                <h3 id="two" class="accordion-padtop"><span class="propername">Matt Cutts</span>, Founding Donor</h3>
+                <div class="clearfix"> 
+                <div class="contact_bar"><a href="http://twitter.com/mattcutts" target="_blank" class="contact_twitter"></a></div>
+                  <div class="contact_details">
+                    <p>Matt Cutts is head of Google&rsquo;s Webspam team, and a major
+                      public face for explaining how search works to webmasters.
+                      He wrote the first version of SafeSearch, Google&rsquo;s family
+                      friendly filter.
+                    </p>
+                  </div>
+                </div>
+                <!-- END SECTION -->
+                <!-- START SECTION -->
+                <h3 id="one" class="accordion-padtop"><span class="propername">Roy Bahat</span>, Donor</h3>
+                <div class="clearfix"> 
+                <div class="contact_bar"><a href="http://twitter.com/roybahat" target="_blank" class="contact_twitter"></a></div>
+                  <div class="contact_details">
+                    <p>Roy Bahat is the head of Bloomberg Beta, a new venture fund that focuses on transforming the world of work. He is also a lecturer at U.C. Berkeley and chairman of OUYA.</p>     
+                  </div>
+                </div>
+                <!-- END SECTION -->
+                <!-- START SECTION -->
+                <h3 id="one" class="accordion-padtop"><span class="propername">Ethan Beard</span>, Donor</h3>
+                <div class="clearfix"> 
+                <div class="contact_bar"><a href="http://twitter.com/ethanbeard" target="_blank" class="contact_twitter"></a></div>
+                  <div class="contact_details">
+                    <p>Ethan Beard is an Entrepreneur In Residence at Greylock Partners. Previously he served as Director of the Facebook Developer Network, where he oversaw worldwide developer relations and marketing for Facebook Platform. He previously served as Director of Business Development at Facebook and led the team responsible for creating and managing strategic partnerships. Ethan joined Facebook from Google, where he served as Director of Social Media and Director of New Business Development.</p>     
+                  </div>
+                </div>
+                <!-- END SECTION -->
+                <!-- START SECTION -->
+                <h3 id="one" class="accordion-padtop"><span class="propername">Ron Carmel</span>, Donor</h3>
+                <div class="clearfix"> 
+                <div class="contact_bar"><a href="http://twitter.com/roncarmel" target="_blank" class="contact_twitter"></a></div>
+                  <div class="contact_details">
+                    <p>Ron Carmel is the co-founder of 2D BOY and co-creator of World of Goo. He is the also a co-founder of Indie Fund, a project-based funding source for promising independent game developers.</p>     
+                  </div>
+                </div>
+                <!-- END SECTION -->
+                <!-- START SECTION -->
+                <h3 id="one" class="accordion-padtop"><span class="propername">Todd DiPaola</span>, Donor</h3>
+                <div class="clearfix"> 
+                
+                  <div class="contact_details">
+                    <p>Todd Dipaola is a digital marketing entrepreneur. He has founded two successful companies and has been featured in the Wall Street Journal. Entrepreneur Magazine, and the New York Times among others. Todd has worked on curbing the influence of money on democracy for over a decade and serves on the boards of California Common Cause, Represent.Us, and the Goldman School of Public Policy.</p>     
+                  </div>
+                </div>
+                <!-- END SECTION -->
+                <!-- START SECTION -->
+                <h3 id="one" class="accordion-padtop"><span class="propername">Ted Wang</span>, Donor</h3>
+                <div class="clearfix"> 
+                <div class="contact_bar"><a href="http://twitter.com/twang" target="_blank" class="contact_twitter"></a></div>
+                  <div class="contact_details">
+                    <p>Ted Wang is a Silicon Valley lawyer who represents high profile startups and established technology companies such as Facebook, Path, Square, StumbleUpon, Sonos and Dropbox. He is a partner at Fenwick & West and someone who Bloomberg identified as "one of Fenwick's biggest draws."</p>     
+                  </div>
+                </div>
+                <!-- END SECTION -->
+                </div>
+            </div>
+            <!-- END ACCORDION -->
           </div>
         </div>
       </div>
@@ -780,7 +866,7 @@ $().ready(function() {
 <script>
     $.scrollDepth({
       testing: true,
-      elements: ['#section_video', '#section_one', '#section_two', '#section_three', '#section_four']
+      elements: ['#section_video', '#section_one', '#section_two', '#section_three', '#section_four' ,'#learn_more']
     });
   </script>
 </body>

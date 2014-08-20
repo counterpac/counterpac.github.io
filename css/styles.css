@@ -336,7 +336,7 @@ body {
 	background-image:url('../images/bg_diamond.png');
 	height: 0;
 	padding-top:5.7%;
-	padding-bottom: 121.5%;
+	padding-bottom: 139.5%;
 }
 .section_four_inner{
 	margin:0 4.7% .625% 4.7%;
@@ -350,7 +350,7 @@ body {
 }
 
 #who_we_are {
-	padding-bottom: 14% !important;
+	padding-bottom: 20% !important;
 }
 .bg_sizing{
 	background-repeat:no-repeat;
@@ -1368,5 +1368,21 @@ html[xmlns] .clearfix {
 	.subpage-medallion {
 	
 	}
+}
+
+.section_subhead {
+	font: normal 1.7em/1em 'Cubano-regular', Arial, Helvetica, sans-serif;
+	color: #fff;
+	margin-bottom: -.25px;
+	margin-top:10px;
+}
+
+.padtop {
+	padding-top:30px;
+	margin-bottom: 5px;
+}
+
+.accordion-padtop {
+	margin-top:5px !important;
 }
 
