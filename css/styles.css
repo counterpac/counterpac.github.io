@@ -1111,7 +1111,7 @@ h4{
 } 
 @media (max-width: 550px) { 
 	#section_four{
-		padding-bottom: 120%;
+		padding-bottom: 180%;
 	}
 } 
 @media (max-width: 568px) { /* iPhone 5 horizontal */
@@ -1141,7 +1141,7 @@ h4{
 } 
 @media (max-width: 470px) { 
 	#section_four{
-		padding-bottom: 150%;
+		padding-bottom: 230%;
 	}
 } 
 @media (max-width: 1055px) { 
@@ -1210,7 +1210,7 @@ h4{
 	}
 	
 	#footerlogo{
-		top:-160%;
+		top:-15%;
 	}
 
 }
