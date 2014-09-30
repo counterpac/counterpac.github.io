@@ -1323,7 +1323,6 @@ html[xmlns] .clearfix {
 	max-width: 100%;
 	font: normal 1.4em 'Cubano-regular', Arial, Helvetica, sans-serif;
 	margin-bottom:5%;
-	margin-top:-10% !important;
 }
 
 .action-inner {
@@ -1336,6 +1335,7 @@ html[xmlns] .clearfix {
 	float:left;
 	margin:auto;
 	margin-bottom:5%;
+	margin-top:-7%;
 }
 
 .action-video{
