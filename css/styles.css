@@ -172,9 +172,9 @@ body {
 
 #section_home2{
 	background-color:#5e5940;
-	background-image:url('http://www.counterpac.org/images/banner_full_logo.jpg');
+	/*background-image:url('http://www.counterpac.org/images/banner_logo_full.jpg');*/
 	height: 0;
-    padding-bottom: 70%; /* percentage relative to width of parent container to maintain aspect ratio */
+    padding-bottom: 51% !important; /* percentage relative to width of parent container to maintain aspect ratio */
 }
 
 #section_video_offset{
