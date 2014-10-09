@@ -1191,12 +1191,12 @@ h4{
 	
 	#section_two_point_five {
 		height:auto !important;
-		padding-bottom: 65% !important;
+		padding-bottom: 85% !important;
 	}
 	
 	.paper {
 		font-size:2.1em;
-		min-height: 460px;
+		min-height: 360px;
 	}
 	
 	.paper li{
