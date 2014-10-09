@@ -255,7 +255,7 @@ body {
 	/*background-image:url('../images/bg_two.jpg');*/
 	background-image:url('../images/bg_diamond.png');
 	height: 0;
-	padding-bottom: 45%;
+	padding-bottom: 50%;
 }
 
 #section_two_point_five h2{
@@ -1191,7 +1191,7 @@ h4{
 	
 	#section_two_point_five {
 		height:auto !important;
-		padding-bottom: 85% !important;
+		padding-bottom: 65% !important;
 	}
 	
 	.paper {
