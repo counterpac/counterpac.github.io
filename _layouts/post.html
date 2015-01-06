@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+{% include header.html %}
+
+  <div id="outer_main">
+    <div id="inner_main">
+      <!-- home -->
+      <div id="section_home" class="inner_container bg_sizing">
+        <div class="block_container clearfix">
+          <div class="centercol">
+            <a href="http://www.counterpac.org"><img src="http://www.counterpac.org/images/home_medallion_1.png" id="medallion" /></a>
+          </div>
+        </div>
+      </div>
+      <!-- home -->
+      
+      <div class="inner_container section_container subpage-container clearfix">
+        <div class="block_container clearfix">
+          <div id="take_action" class="section_four_inner clearfix">
+            <div class="blog-header">
+              <h3 class="salmon">{{ page.title }}</h3>
+              <h5>{{ page.date | date_to_string }}</h5>
+              <br style="clear:both;" />  
+            <br />
+            <div id="blog-content">
+                  {{ content }}
+            </div>
+            </div>
+          </div>
+         
+        </div>
+      </div>
+
+      {% include footer.html %}
+
+    </div>
+  </div>
+
+{% include endfooter.html %}
