@@ -1,6 +1,12 @@
 // JavaScript Document
 
 $(document).ready(function() {
+
+
+console.log('woodie');
+
+$('.ad-index tbody tr td:first-child').addClass('date-field');
+
 						   
 						   
 	//top dock nav
@@ -363,6 +369,7 @@ function animate_hiw_3() {
 			
 			
 	}, {offset:"50%"});
+
 
 
 /* Vimeo API controls */

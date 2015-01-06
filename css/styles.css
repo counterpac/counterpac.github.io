@@ -1305,6 +1305,24 @@ html[xmlns] .clearfix {
 	padding: 1%;
 }
 
+.ad-index.news-index {
+	text-align: left;
+}
+
+.ad-index .date-field {
+	width: 15%;
+}
+
+.ad-index.news-index td {
+	padding: 1% 0%;
+	box-sizing: border-box;
+}
+
+.ad-index.news-index .headline {
+	box-sizing: border-box;
+	padding-right: 25px;
+}
+
 .ad-info {
 	font-size:.7em;
 	font-style:italic;
