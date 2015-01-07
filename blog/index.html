@@ -22,14 +22,15 @@ title: Blog
           <div id="take_action" class="section_four_inner clearfix">
             <div class="subpage-subheader">
               <h3 class="salmon">Blog</h3>
-              <h5>CounterPAC's Internal Blog</h5>
-              <br style="clear:both;" />  
+              <h5>Updates From CounterPAC's Internal Blog</h5>
+             <!--  <br style="clear:both;" />   -->
             <br />
 
-            <ul>
+            <ul class="blog-post-list">
               {% for post in site.posts %}
                 <li>
-                  <a href="{{ post.url }}">{{ post.title }}</a>
+                  <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+                  <span class="post-date">{{ post.date | date_to_string }}</span>
                 </li>
               {% endfor %}
             </ul>         

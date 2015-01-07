@@ -16,17 +16,19 @@ layout: default
       </div>
       <!-- home -->
       
-      <div class="inner_container section_container subpage-container clearfix">
+      <div id="blog-wrapper" class="inner_container section_container subpage-container clearfix">
         <div class="block_container clearfix">
-          <div id="take_action" class="section_four_inner clearfix">
+          <div id="take_action" class="blog_inner clearfix">
             <div class="blog-header">
+              <span class="blog-homelink"><a href="/blog">CounterPAC Blog</a></span>
               <h3 class="salmon">{{ page.title }}</h3>
-              <h5>{{ page.date | date_to_string }}</h5>
+              <h5 class="blog-meta"> {{ page.date | date_to_string }} {% if page.author %} ~ By  {{ page.author }} {% endif %}</h5>
               <br style="clear:both;" />  
-            <br />
+            </div>
+            <div id="blog-border"></div>
             <div id="blog-content">
                   {{ content }}
-            </div>
+              <br style="clear:both;" />  
             </div>
           </div>
          
