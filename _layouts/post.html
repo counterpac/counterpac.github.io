@@ -10,7 +10,7 @@ layout: default
       <div id="section_home" class="inner_container bg_sizing">
         <div class="block_container clearfix">
           <div class="centercol">
-            <a href="http://www.counterpac.org"><img src="http://www.counterpac.org/images/home_medallion_1.png" id="medallion" /></a>
+            <a href="{{ site.url }}"><img src="http://www.counterpac.org/images/home_medallion_1.png" id="medallion" /></a>
           </div>
         </div>
       </div>
@@ -25,9 +25,18 @@ layout: default
               <h5 class="blog-meta"> {{ page.date | date_to_string }} {% if page.author %} ~ By  {{ page.author }} {% endif %}</h5>
               <br style="clear:both;" />  
             </div>
-            <div id="blog-border"></div>
             <div id="blog-content">
+              <div id="blog-content-inner">
                   {{ content }}
+              </div>
+              <div class="pagination">
+                {% if page.previous %}
+                  <a class="blog-link older" href="{{ site.url }}{{page.previous.url}}">Previous</a>
+                {% endif %}
+                {% if page.next %}
+                    <a class="blog-link newer" href="{{ site.url }}{{page.next.url}}">Next</a>
+                {% endif %}
+              </div>
               <br style="clear:both;" />  
             </div>
           </div>
