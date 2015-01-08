@@ -122,6 +122,7 @@ body {
 	padding-top:17px;
 	background:url('../images/fancy_nav_lrg.png') 0 0 no-repeat;
 	background-size:100%;
+	background-position: 0px 4px;
 	text-align:center;
 	font:10px/9px 'National-Book', Arial, Helvetica, sans-serif;
 	color:#a09e8f;
