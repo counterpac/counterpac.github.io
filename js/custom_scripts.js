@@ -1,12 +1,6 @@
 // JavaScript Document
 
 $(document).ready(function() {
-
-
-console.log('woodie');
-
-$('.ad-index tbody tr td:first-child').addClass('date-field');
-
 						   
 						   
 	//top dock nav
