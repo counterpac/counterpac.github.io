@@ -382,6 +382,9 @@ body {
 	text-align:left;
 	color:#FFFFFF;
 }
+.tricolumn.double {
+	width: 60%;
+}
 .tricolumn p, .tricolumn li, .list_title {
 	font:1.4em/1.3em 'National-Book', Arial, Helvetica, sans-serif;	
 	color:#FFFFFF;

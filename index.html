@@ -570,7 +570,46 @@ $().ready(function() {
                 <li><a href="http://maplight.org" target="_blank">MapLight.org</a></li>
               </ul>
             </div>
+      </div>  <!-- end section 4 -->
+
+      <!-- section 5 -->
+      <div id="section_five" class="inner_container section_container clearfix">
+        <div class="block_container clearfix">
+          <div id="homepage_news" class="section_four_inner_dark clearfix">
+            <div class="tricolumn">
+              <h3>News</h3>
+              <p>CounterPAC's work is high-impact. We make headlines. <a href="/news">Read all about it.</a></p>
+            </div>
+            <div class="tricolumn double"> 
+              <ul id="frontpage_news">
+                <!-- top 5 loaded in dynamically with js from the news page -->
+              </ul>
+            </div>
           </div>
+
+
+      <!-- section 6 -->
+      <div id="section_six" class="inner_container section_container clearfix">
+        <div class="block_container clearfix">
+          <div id="homepage_news" class="section_four_inner_dark clearfix">
+            <div class="tricolumn">
+              <h3>Blog</h3>
+              <p>CounterPAC has a blog. Get hip to what we're doing here.</a></p>
+            </div>
+            <div class="tricolumn double"> 
+              <ul id="frontpage_blog">
+                {% for post in site.posts limit:5 %}
+                  <li>
+                    <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
+                    <span class="post-date">{{ post.date | date_to_string }}</span>
+                  </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+
+
+
           <div id="who_we_are" class="section_four_inner_dark clearfix">
             <div class="tricolumn">
               <h3>Who we are</h3>
