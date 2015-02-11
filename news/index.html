@@ -37,23 +37,18 @@ title: News
             			<th>
             				Outlet
             			</th>
-            		</tr?
+            		</tr>
             	</thead>
             	<tbody>
-            		<tr>
-            			<td>01-01-2015</td>
-            			<td>
-            				<a href="http://democracynow.org">Amy Goodman Interviews CounterPAC's Jay Costa on Legacy of Citizens United Decision</a>
-            			</td>
-            			<td>Democracy Now</td>
-            		</tr>
-                <tr>
-                  <td>09-16-2014</td>
-                  <td>
-                    <a href="http://viceland.com">Upstart CounterPAC Brings Down Corrupt Lobbyist</a>
-                  </td>
-                  <td>Vice News</td>
-                </tr>
+                <!-- to add stories here, edit _data/news.yml -->
+                {% for story in site.data.news %}
+                  <tr>
+                    <td>{{ story.date }}</td>
+                    <td>
+                      <a href="{{ story.link }}">{{ story.title }}</a>
+                    </td>
+                    <td>{{ story.media }}</td>
+                {% endfor %}
             	</tbody>
             </table>
             
