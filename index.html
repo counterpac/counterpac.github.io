@@ -548,29 +548,6 @@ $().ready(function() {
             </div>
           </div>
 
-          <div class="section_four_inner_dark clearfix">
-            <div class="tricolumn">
-              <h3>Learn more</h3>
-              <p>Get more information about how money actually affects democracy in light of our complex political system.</p>
-            </div>
-            <div class="tricolumn"> <span class="list_title">The Center for Responsive Politics</span>
-              <ul>
-                <li><a href="http://opensecrets.org" target="_blank">OpenSecrets.org</a></li>
-                <li><a href="http://www.opensecrets.org/influence/" target="_blank">Influence and Lobbying</a></li>
-                <li><a href="http://www.opensecrets.org/pacs/index.php" target="_blank">PACs and SuperPACs</a></li>
-                <li><a href="http://www.opensecrets.org/states/index.php?ql3&amp;srch=zip" target="_blank">Who Funds Your Rep?</a></li>
-              </ul>
-            </div>
-            <div class="tricolumn col_last"> <span class="list_title">Other sources</span>
-              <ul>
-                <li><a href="http://www.commoncause.org/site/pp.asp?c=dkLNK1MQIwG&b=8664093" target="_blank">Common Cause: A Plea for the Pledge</a></li>
-                <li><a href="http://en.wikipedia.org/wiki/Campaign_finance" target="_blank">Campaign finance</a></li>
-                <li><a href="http://en.wikipedia.org/wiki/Citizens_united" target="_blank">Citizens United ruling</a></li>
-                <li><a href="http://www.ted.com/talks/lawrence_lessig_we_the_people_and_the_republic_we_must_reclaim.html" target="_blank">TED Talk by Lawrence Lessig</a></li>
-                <li><a href="http://maplight.org" target="_blank">MapLight.org</a></li>
-              </ul>
-            </div>
-      </div>  <!-- end section 4 -->
 
       <!-- section 5 -->
       <div id="section_five" class="inner_container section_container clearfix">
@@ -601,12 +578,36 @@ $().ready(function() {
                 {% for post in site.posts limit:5 %}
                   <li>
                     <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
-                    <span class="post-date">{{ post.date | date_to_string }}</span>
+                    <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
                   </li>
                 {% endfor %}
               </ul>
             </div>
           </div>
+
+          <div class="section_four_inner_dark clearfix">
+            <div class="tricolumn">
+              <h3>Learn more</h3>
+              <p>Get more information about how money actually affects democracy in light of our complex political system.</p>
+            </div>
+            <div class="tricolumn"> <span class="list_title">The Center for Responsive Politics</span>
+              <ul>
+                <li><a href="http://opensecrets.org" target="_blank">OpenSecrets.org</a></li>
+                <li><a href="http://www.opensecrets.org/influence/" target="_blank">Influence and Lobbying</a></li>
+                <li><a href="http://www.opensecrets.org/pacs/index.php" target="_blank">PACs and SuperPACs</a></li>
+                <li><a href="http://www.opensecrets.org/states/index.php?ql3&amp;srch=zip" target="_blank">Who Funds Your Rep?</a></li>
+              </ul>
+            </div>
+            <div class="tricolumn col_last"> <span class="list_title">Other sources</span>
+              <ul>
+                <li><a href="http://www.commoncause.org/site/pp.asp?c=dkLNK1MQIwG&b=8664093" target="_blank">Common Cause: A Plea for the Pledge</a></li>
+                <li><a href="http://en.wikipedia.org/wiki/Campaign_finance" target="_blank">Campaign finance</a></li>
+                <li><a href="http://en.wikipedia.org/wiki/Citizens_united" target="_blank">Citizens United ruling</a></li>
+                <li><a href="http://www.ted.com/talks/lawrence_lessig_we_the_people_and_the_republic_we_must_reclaim.html" target="_blank">TED Talk by Lawrence Lessig</a></li>
+                <li><a href="http://maplight.org" target="_blank">MapLight.org</a></li>
+              </ul>
+            </div>
+      </div>  <!-- end section 4 -->
 
 
 

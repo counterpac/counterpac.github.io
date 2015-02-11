@@ -157,7 +157,7 @@ $("#tempdiv").load("news/index.html .news-index tr", function(){
 			var linkitem = $("<li></li>");
 			linkitem.addClass('news_link');
 			linkitem.append('<span class="press-title">' + title + '</span>');
-			linkitem.append('<span class="brand">' + outlet + '</span>');
+			linkitem.append('<span class="brand">— ' + outlet + ', </span>');
 			linkitem.append('<span class="date">' + date + '</span>');
 			$("#frontpage_news").append(linkitem);
 		}		
