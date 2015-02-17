@@ -1,3 +1,9 @@
+- race: West Virginia 3rd District
+  medium: WSAZ-NBC, WOWK-CBS, WCHS-ABC, WVNS-CBS, WVVA-NBC
+  preview_link: https://www.youtube.com/watch?v=vyFqxyKZdw8
+  preview_thumb: http://www.counterpac.org/images/rahall_tv_thumb.jpg
+  date: 10-22-2014
+
 - race: Colorado 6th District
   medium: KUSA-NBC, KCNC-CBS, KDVR-Fox, KMGH-ABC
   preview_link: http://www.counterpac.org/campaigns/dark-money-mike.html
@@ -6,6 +12,12 @@
 
 - race: Iowa Senate
   medium: Des Moines Register
+  preview_link: http://www.counterpac.org/images/CounterPAC_IA_10x20.5.jpg
+  preview_thumb: http://www.counterpac.org/images/ia_sen_print_thumb.jpg
+  date: 08-26-2014
+  
+- race: Colorado 6th District
+  medium: Denver Post
   preview_link: http://www.counterpac.org/images/CounterPAC_IA_10x20.5.jpg
   preview_thumb: http://www.counterpac.org/images/co_06_print_thumb.jpg
   date: 08-26-2014

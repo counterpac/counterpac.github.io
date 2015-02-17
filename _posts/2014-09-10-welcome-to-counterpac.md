@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to CounterPAC!"
-date:   2014-09-10 12:28:37
+title:  "Secret Donors Beware, CounterPAC is Coming."
+date:   2014-08-08 12:28:37
 author: Jay Costa
 ---
 
