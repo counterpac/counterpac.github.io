@@ -562,11 +562,12 @@ $().ready(function() {
                 <!-- to add stories here, edit _data/news.yml -->
                 {% for story in site.data.news %}
                   <li class="news_link">
-                    <span>
-                      <a href="{{ story.link }}">{{ story.title }}</a>
+                    <span class="title">
+                      <a href="{{ story.link }}" class="link">{{ story.title }}</a>
                     </span>
                     <span class="date">{{ story.date }}</span>
                     <span class="brand">{{ story.media }}</span>
+                    <div class="clear"></div>
                 {% endfor %}
               </li>
             </div>

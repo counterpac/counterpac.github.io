@@ -1,12 +1,27 @@
-- title: My Newest Newsy Headline
-  media: MSNBC
-  link: http://msnbc.com/news/story123
-  date: 03-15-2015
+- title: How to Fight Corruption With Game Theory
+  media: Daily Beast
+  link: http://www.thedailybeast.com/articles/2014/11/29/how-to-fight-corruption-with-game-theory.html
+  date: 11-29-2014
 
-- title: Tattoo Traditions of Hawaii
-  media: BBC
-  link: http://bbc.co.uk/news/story123
-  date: 01-07-2015
+- title: Hacking the Hill
+  media: National Journal
+  link: http://www.nationaljournal.com/magazine/hacking-the-hill-20141024
+  date: 10-24-2014
+
+- title: The Other Super PAC Taking on Outside Spending
+  media: Sunlight Foundation
+  link: http://sunlightfoundation.com/blog/2014/09/19/the-other-pac-taking-on-outside-spending
+  date: 09-19-2014
+
+- title: Super PAC Targets Iowa's 'Dark Money' Donors
+  media: Globe Gazette
+  link: http://globegazette.com/news/local/super-pac-targets-iowa-s-dark-money-donors/article_b8bd19df-7d9a-534f-bd68-7907e0de2a14.html
+  date: 08-27-2014
+
+- title: Anti-Super PAC Ads From Anti-Super PAC Super PACs
+  media: BoingBoing
+  link: http://boingboing.net/2014/08/22/anti-super-pac-ads-from-anti-s.html
+  date: 08-22-2014
 
 
 
