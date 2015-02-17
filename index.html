@@ -560,7 +560,7 @@ $().ready(function() {
             <div class="tricolumn double"> 
               <ul id="frontpage_news">
                 <!-- to add stories here, edit _data/news.yml -->
-                {% for story in site.data.news %}
+                {% for story in site.data.news limit:5 %}
                   <li class="news_link">
                     <span class="title">
                       <a href="{{ story.link }}" class="link">{{ story.title }}</a>

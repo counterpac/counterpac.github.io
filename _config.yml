@@ -1,5 +1,5 @@
 # Site settings
 title: CounterPAC
 # the base hostname & protocol for your site
-# url: "http://counterpac.org" # production
-url: "http://0.0.0.0:4000" # local
+url: "http://counterpac.org" # production
+# url: "http://0.0.0.0:4000" # local
