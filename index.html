@@ -559,8 +559,16 @@ $().ready(function() {
             </div>
             <div class="tricolumn double"> 
               <ul id="frontpage_news">
-                <!-- top 5 loaded in dynamically with js from the news page -->
-              </ul>
+                <!-- to add stories here, edit _data/news.yml -->
+                {% for story in site.data.news %}
+                  <li class="news_link">
+                    <span>
+                      <a href="{{ story.link }}">{{ story.title }}</a>
+                    </span>
+                    <span class="date">{{ story.date }}</span>
+                    <span class="brand">{{ story.media }}</span>
+                {% endfor %}
+              </li>
             </div>
           </div>
 
@@ -578,7 +586,7 @@ $().ready(function() {
                 {% for post in site.posts limit:5 %}
                   <li>
                     <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
-                    <span class="post-date">{{ post.date | date: "%B %-d, %Y" }}</span>
+                    <span class="post-date">{{ post.date | date: "%m-%d-%Y" }}</span>
                   </li>
                 {% endfor %}
               </ul>

@@ -133,41 +133,6 @@ $(document).ready(function() {
 /* Get news for homepage */
 
 
-// $.get( "/news/index.html #take_action", function( data ) {
-//   $( "#footer" ).html( data );
-//   console.log(data);
-//   alert( "Load was performed." );
-// });
-
-$("#frontpage_news").append("<div id='tempdiv' style='display:none'></div>");
-
-$("#tempdiv").load("news/index.html .news-index tr", function(){
-
-	$("#tempdiv tr").each(function(i){
-		
-		if (i == 0) { /* nothing */ }
-		if (i == 1 | i == 2 | i == 3 | i == 4 | i == 5 ) { 
-			console.log("this is number " + i + " yo!");
-
-			var date = $(this).children('td:first').text();
-			var title = $(this).children('td:nth-child(2)').html();
-			var outlet = $(this).children('td:nth-child(3)').html();
-			console.log(title + ", " + outlet + " " + date);
-
-			var linkitem = $("<li></li>");
-			linkitem.addClass('news_link');
-			linkitem.append('<span class="press-title">' + title + '</span>');
-			linkitem.append('<span class="brand">— ' + outlet + ', </span>');
-			linkitem.append('<span class="date">' + date + '</span>');
-			$("#frontpage_news").append(linkitem);
-		}		
-
-	});
-
-});
-
-console.log();
-
 });
 
 /* Tooltip code - based on Coda Popup sample code from Jorge Mesa - http://jqueryfordesigners.com/coda-popup-bubbles/ */
