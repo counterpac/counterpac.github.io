@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "A Lost Opportunity for a More Accountable Election"
+title:  "CounterPAC's experiment this year was a success."
 date:   2014-11-06 12:28:37
 author: Jim Greer
 ---
