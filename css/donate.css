@@ -16,7 +16,7 @@ CSS rules into "custom.css".
 - - - - - - - - - - - - - - - - - - - - - */
 
 html {
-  background-image:url('http://theresachien.github.io/counterpac-new/images/donate/slant_background.png');
+  background-image:url('http://www.counterpac.org/images/donate/slant_background.png');
   background-color:#4b4a43
   }
 .wufoo { font: 17px/23px 'National-Book', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
@@ -37,7 +37,7 @@ html {
   position: absolute;
   left: -170px;
   top: -80px; 
-  background-image:url('http://theresachien.github.io/counterpac-new/images/donate/counterpac_logo.png'); 
+  background-image:url('http://www.counterpac.org/images/donate/counterpac_logo.png'); 
   min-height: 0; 
   width: 142px; 
   height: 142px
