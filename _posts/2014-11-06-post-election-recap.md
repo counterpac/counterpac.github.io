@@ -3,6 +3,7 @@ layout: post
 title:  "CounterPAC's experiment this year was a success."
 date:   2014-11-06 12:28:37
 author: Jim Greer
+summary: As the dust begins to settle in the wake of Election Day, we wanted to take a moment and share with you how excited we are about the results of our campaign. In three of the most competitive races that took place this election, we succeeded in bringing the issue of political spending to the forefront of the debate, getting both candidates to go on public record about their willingness to take a stand against the critical problem of untraceable outside spending.
 ---
 
 As the dust begins to settle in the wake of Election Day, we wanted to take a moment and share with you how excited we are about the results of our campaign.

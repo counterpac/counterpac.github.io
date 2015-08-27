@@ -1,0 +1,116 @@
+/* - - - - - - - - - - - - - - - - - - - - -
+
+ Title : Example Custom CSS : DinoMaster!
+ URL : http://wufoo.com
+
+ Last Updated : April 1, 2011
+
+- - - - - - - - - - - - - - - - - - - - - 
+
+INSTRUCTIONS
+1. Copy / Paste all or portions of these
+CSS rules into "custom.css".
+
+2. Experiment and play.
+
+- - - - - - - - - - - - - - - - - - - - - */
+
+html {
+  background-image:url('http://www.counterpac.org/images/donate/slant_background.png');
+  background-color:#4b4a43
+  }
+.wufoo { font: 17px/23px 'National-Book', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+#container{
+  position: relative; 
+  background:#b4b1a1 !important;
+  border:0; 
+  -webkit-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.2); 
+     -moz-box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.2); 
+          box-shadow: 0px 0px 6px 1px rgba(0,0,0,0.2);
+  }
+#container, html.embed { background-color: #b4b1a1 !important; }
+#logo {
+  background-image:none;
+  background-color:transparent
+  }
+#logo a {
+  position: absolute;
+  left: -170px;
+  top: -80px; 
+  background-image:url('http://www.counterpac.org/images/donate/counterpac_logo.png'); 
+  min-height: 0; 
+  width: 142px; 
+  height: 142px
+  }
+form.wufoo { position: relative; margin-top: 115px; }
+form.wufoo header { display: none !important; }
+form.wufoo .info { border: 0; }
+form.wufoo header h2 { font: 31px/40px 'Cubano-Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif; color: #F4F3EA; text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.5); letter-spacing: 0.5px; text-transform: uppercase;; color: #f4f3ea; }
+form.wufoo header div { font-size: 95%; color: #cdcbbd }
+
+
+form.wufoo label.desc, .wufoo legend.desc {
+  font-family: 'National-SemiBold', Tahoma, sans-serif;
+  color:#050505;
+  text-transform:uppercase;
+  }
+form.wufoo input.field, form.wufoo textarea { 
+  padding: 14px 4px; 
+  border: 0; 
+  background-color: #94907b; 
+          border-radius: 6px;
+     -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  color: #f4f3ea;
+  background-image: none;
+  }
+form.wufoo input.field:focus, form.wufoo textarea:focus {
+    box-shadow: 0 0 5px rgba(148, 144, 123, 1);
+  }
+form li.focused { background-color: transparent !important; }
+form li.focused .instruct, form li:hover .instruct { left: auto; right: -233px; top: 40px; width: 40%; }
+
+form.wufoo #fo2li1 .symbol { font-size: 25px; line-height: 50px; }
+form li.section { padding-top: 20px !important; border-top: 1px solid #4b4a43; }
+form ul:li.section { border: 0 !important; }
+.noI form li, .altInstruct form li { padding: 6px 16px; }
+#payment .desc { font-size: 100% !important; }
+form#form2 li span input, form li span.cents input { padding: 14px 10px; }
+form li span.cents input { width: 40px; }
+
+.wufoo .section h3{ font: 110% 'National-SemiBold', Tahoma, sans-serif; color:#000}
+.wufoo .section div{font-size:85%;font-family:inherit;color:#444444}
+.wufoo li div, .wufoo li div label, .wufoo li span label{font-family:inherit;color:#444444}
+.wufoo input.text, .wufoo textarea.textarea, .wufoo select.select, .wufoo label.choice{font-size:100%;font-family:inherit;color:#333333}
+.wufoo label.choice{ color: #444 }
+.wufoo .instruct{font-size:80%;font-family:inherit;color:#444;line-height: 100%; }
+.wufoo #errorLi { background-color: #f4f3ea !important;-webkit-border-radius: 0; -moz-border-radius: 0; border-radius: 0;  }
+
+input[type='submit'] {
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;  
+  }
+#saveForm,#submitFormButton { display: inline-block; padding: 10px 70px; font: 18px 'Cubano-Regular', Arial, Tahoma, sans-serif; color: #F4F3EA; background-color: #6a6754; text-decoration: none; text-align: center; letter-spacing: 0.5px; border: 0; cursor:pointer;  text-transform: uppercase;
+  -webkit-border-radius: 5px; 
+     -moz-border-radius: 5px; 
+          border-radius: 5px;
+     -webkit-box-shadow: 0px 3px 0px rgba(236,20,91,1);
+        -moz-box-shadow: 0px 3px 0px rgba(236,20,91,1);
+             box-shadow: 0px 3px 0px rgba(236,20,91,1);
+  }
+
+/* ------------------- media queries ---------------- */
+@media only screen and (max-width : 700px) {
+  form .right { float: none; clear: both; }
+  form img.right { float: right; }
+  form li.complex div span.left, form li.complex div span.right { width: 98%; }
+  .leftLabel .desc, .rightLabel .desc, .leftLabel li div, .rightLabel li div { width: 98%; float: none; }
+  .noI .leftLabel .buttons, .noI .rightLabel .buttons { padding: 0; }
+  #payment .desc { margin: 20px 0 10px; }
+  #payment #ppSection .desc { margin: 0; }
+  #ppSection img { width: 45px; height: 30px; }
+}
+
+
+

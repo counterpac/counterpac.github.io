@@ -1,0 +1,105 @@
+<!-- Add jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script type="text/javascript" src="{{ site.url }}/scripts/slick/slick.min.js"></script>
+<script src="{{ site.url }}/scripts/jquery.codabubble.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="{{ site.url }}/scripts/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    
+    $('body').addClass('js');
+    
+    var $menu = $('#menu'), $menulink = $('.menu-link');
+    $menulink.click(function () {
+      $menulink.toggleClass('active');
+      $menu.toggleClass('active');
+      return false;
+    });
+    
+    $(".full-bio-link").click(function(){
+        $(".full-bio").addClass("active");
+        $(".full-bio-link").addClass("inactive");
+    });
+
+    var $window = $(window);
+    if ($window.width() < 600) {
+      $('.section-inner').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: false,
+        variableWidth: true
+      });
+    } else {
+      $('.section-inner').slick({
+        dots: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 2,
+        centerMode: false,
+        variableWidth: true
+      });
+    }
+    
+    $('.counterfacts-sm').slick({
+      dots: false,
+      speed: 300,
+      slidesToShow: 1,
+      centerMode: true,
+      variableWidth: false,
+      centerPadding: 0
+    });
+    
+    $('.carousel').slick();{
+      dots: true
+    }
+    
+		$(".fancybox").fancybox();
+    $(".fancybox").fancybox({
+  		maxWidth	: 800,
+  		maxHeight	: 800,
+  		width	: '90%',
+  		height : '90%',
+      padding : 0,
+      nextEffect: 'fade',
+      prevEffect: 'fade'
+    });
+
+  	$(".fancybox-vid").fancybox({
+  		maxWidth	: 800,
+  		maxHeight	: 600,
+  		fitToView	: true,
+  		autoSize	: true,
+  		closeClick	: false,
+  		openEffect	: 'none',
+  		closeEffect	: 'none'
+  	});
+  	
+  });
+  
+  $(function(){
+    $('.bubbleInfo').codabubble({
+        direction: 'down',
+        offset: 30
+    });
+	});
+  
+  $("#privacy-policy-link").click( function() {
+    $("#privacy-policy").slideDown();
+    $("html, body").animate({ scrollTop: $(document).height() } );
+    return false;
+  });
+
+</script>
+
+<!-- Analytics  -->
+<script type="text/javascript" language="javascript">
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-41841100-1', 'counterpac.org');
+	  ga('send', 'pageview');
+</script>

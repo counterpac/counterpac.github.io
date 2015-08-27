@@ -1,0 +1,90 @@
+---
+layout: default
+title: CounterPAC Campaigns
+id: race
+active: pledges
+---
+      
+  <section class="race_details">
+    <header>
+      <h1 class="mbn">West Virginia<br/>3rd Congressional District, 2014</h1>
+      <h2 class="h3 invert">Goal: <a href="{{ site.url }}/pledges/no-dark-money/">No Dark Money</a></h2>
+    </header>
+    <div class="overview clear">
+      <div class="candidates">
+        <img src="{{ site.url }}/images/campaigns/candidate_jenkins.jpg" class="candidate1">
+        <img src="{{ site.url }}/images/campaigns/candidate_rahall.jpg" class="candidate2">
+      </div>
+      <div class="text_summary translucent invert">
+        <strong class="h2 emphasis under_emphasis">When 19-term incumbent Nick Rahall blocked a pledge agreement, we held him accountable.</strong>
+        <p>In WV-03, after 19-term Democratic incumbent Nick Rahall obstructed a pledge agreement with his opponent, we held him accountable by running ads in his district that highlighted his choice to side with secret donors over voters. In a race that Politico had called one of the tightest in the country, Rahall ultimately lost, and polling showed that our campaign played a meaningful role in the outcome.</p>
+      </div>
+    </div>
+  </section>
+  
+  <section class="timeline">
+    <h1>Timeline</h1>
+    <iframe src="{{ site.url }}/timelines/2014_Rahall-Jenkins_timeline.html" frameborder="0" scrolling="no" width="100%" height="700"></iframe>
+
+    <div class="vertical-timeline">
+      
+      <style>
+        .detail { font: 16px/22px 'National-Book', Arial, sans-serif; }
+        span.date {  display: block; margin: 0 0 10px; font: 12px/15px Arial, sans-serif; text-transform: uppercase; color: #4f4e48; }
+        strong.title { display: block; font: 19px/21px 'National-SemiBold', Arial, sans-serif; }
+        p.desc { margin: 12px 0; }
+        .print-ad .date { margin-top: 10px; }
+        .print-ad .image_wrapper { position: relative; }
+        .print-ad .expand-icon { position: absolute; left: 3px; bottom: 3px; }
+        .broadcast-ad .video_wrapper { position: relative; }
+        .broadcast-ad img.play-icon { width: 50px; position: absolute; margin: auto; left: 0; right: 0; top: 0; bottom: 0; }
+        .broadcast-ad img.video-thumb { display: block; max-width: 425px; margin:0 auto 20px }
+        .no-image .title { padding: 5px 0 15px; margin-bottom: 15px; border-bottom: 1px solid #ec145b; }
+        .press .title { margin: 12px 0 4px;  }
+        .press .source { display: block; color: #615f51; }
+        .press .article,.no-image .article { padding: 10px 0; color: #ec145b; text-decoration: underline; }
+        
+        .vertical-timeline .timeline-items { border-left: 3px solid #87856f; }
+        .vertical-timeline .timeline-items li { position: relative; margin: 15px 0 15px 3px; padding: 25px; background: #aeab94 url('{{ site.url }}/images/timelines/light_slant_container.gif'); color: #333; }
+        .vertical-timeline .timeline-items li .video-thumb { max-width: 460px; width: 100%; }
+
+        .type-icon { display: block; width: 28px; height: 28px; position: absolute; top: 18px; left: -18px; border-radius: 50%; background: url('{{ site.url }}/images/timelines/timeline_icons.png') no-repeat 0 0; text-indent: -9999px; }
+
+        /* Print */
+        .timeline-items .type-icon.print_ad { background-color: #ec145b !important; border: 1px solid #d50b4d; background-position: -60px -10px; }
+        .timeline-items .type-icon.press { background-color: #a4a188 !important; border: 1px solid #8b8871; background-position: -153px -9px; }
+        .timeline-items .type-icon.meeting { background-color: #3e3b22 !important; border: 1px solid #282614; background-position: -106px -10px; }
+        .timeline-items .type-icon.broadcast_ad { background-color: #ec145b !important; border: 1px solid #d50b4d; background-position: -13px -10px; }
+        .timeline-items .type-icon.pledge_proposal { background-color: #ece9d8 !important; border: 1px solid #cec899; background-position: -12px -53px; }
+        .timeline-items .type-icon.campaign_communication { background-color: #d4cd9b !important; border: 1px solid #cec899; background-position: -60px -54px;}
+        .timeline-items .type-icon.candidate_pledge_agreement { background-color: #405821 !important; border: 1px solid #334818; background-position: -106px -56px; }
+
+        @media only screen and (max-width : 480px) {
+          #race .timeline { padding: 35px 20px; }
+          .vertical-timeline .timeline-items li .image_wrapper.img { float: none; }
+          .vertical-timeline .timeline-items li .image_wrapper .print_img { max-width: 167px; width: 100%; }
+        }
+
+        @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+        	.type-icon { 
+        	  background-image: url('{{ site.url }}/images/timelines/timeline_icons_2x.png');
+      		  background-size: 200px 95px; 
+      		}
+        }
+
+      </style>
+      
+      <ul class="timeline-items">
+        {% for race in site.data.timelines.2014_WV %}
+          <li>
+            <span class="type-icon {{ race.series | downcase | replace:' ','_' }}">{{ race.series }}</span>
+            {{ race.html }}
+          </li>
+        {% endfor %}  
+      </ul>
+      
+    </div>
+    
+    
+    
+  </section>

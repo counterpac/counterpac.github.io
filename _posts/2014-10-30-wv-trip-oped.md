@@ -3,6 +3,7 @@ layout: post
 title:  "A Lost Opportunity for a More Accountable Election"
 date:   2014-10-30 12:28:37
 author: Jim Greer
+summary: When I traveled to Charleston earlier this month for just one meeting, I fully expected the trip would be brief. But one brief meeting became no meeting at all when only one of the vital participants showed up. Instead of witnessing an historic moment for West Virginia, I sat in a virtually empty room with Evan Jenkins, the challenger for West Virginia's Third Congressional District, while his counterpart, Rep. Nick Rahall, was nowhere to be found.
 ---
 
 When I traveled to Charleston earlier this month for just one meeting, I fully expected the trip would be brief.
@@ -39,4 +40,6 @@ If this election holds true to form, the final month will account for roughly an
 
 They should know they were just one empty chair away.
 
-<em>This post was originally published in the <a href="http://www.charlestondailymail.com/article/20141030/DM04/141039991#sthash.QsM0runi.dpuf">Charleston Daily Mail</a></em>
+<em>This post was originally published in the [Charleston Daily Mail][CDM-Link]</em>
+
+[CDM-Link]: http://www.charlestondailymail.com/article/20141030/DM04/141039991#sthash.QsM0runi.dpuf

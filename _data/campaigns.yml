@@ -1,58 +1,65 @@
-- race: West Virginia 3rd District
-  medium: WSAZ-NBC, WOWK-CBS, WCHS-ABC, WVNS-CBS, WVVA-NBC
-  preview_link: https://www.youtube.com/watch?v=vyFqxyKZdw8
-  preview_thumb: http://www.counterpac.org/images/rahall_tv_thumb.jpg
-  date: 10-22-2014
+- race: West Virginia 3rd Congressional District, 2014
+  permalink: west-virginia-3rd-congressional-2014
+  goal: No Dark Money
+  goal_id: no-dark-money
+  featured: yes
+  short_summary: When 19-term incumbent Nick Rahall blocked a pledge agreement, we held him accountable.
+  med_summary: After 19-term Democratic incumbent Nick Rahall obstructed a pledge agreement with his opponent, we held him accountable on Election Day.
+  long_summary: In WV-03, after 19-term Democratic incumbent Nick Rahall obstructed a pledge agreement with his opponent, we held him accountable by running ads in his district that highlighted his choice to side with secret donors over voters. In a race that Politico had called one of the tightest in the country, Rahall ultimately lost, and polling showed that our campaign played a meaningful role in the outcome.
+  candidate1_img: /images/campaigns/candidate_jenkins.jpg
+  candidate2_img: /images/campaigns/candidate_rahall.jpg
+  video_ad_img: /timelines/images/rahall-video.jpg
+  print_ad_img: 
 
-- race: Colorado 6th District
-  medium: KUSA-NBC, KCNC-CBS, KDVR-Fox, KMGH-ABC
-  preview_link: http://www.counterpac.org/campaigns/dark-money-mike.html
-  preview_thumb: http://www.counterpac.org/images/dark-money-mike-thumb.jpg
-  date: 09-16-2014
+- race: Alaska Senate, 2014
+  permalink: alaska-senate-2014
+  goal: No Dark Money
+  goal_id: no-dark-money
+  featured: yes
+  short_summary: We successfully convinced a recalcitrant Mark Begich to make a public commitment to take our pledge.
+  med_summary: When Mark Begich dragged his feet, we deployed a series of campaigns that forced him to pay attention, ultimately getting him to agree publicly to take our proposed pledge.
+  long_summary: In Alaska, when the incumbent Mark Begich responded to our pledge challenge by stringing us along and making excuses, we deployed a series of strategic campaign interventions to put pressure on him, including paid ads, op-eds, grassroots lobbying, and activating a network of major donors. Ultimately, our tactics succeeded in bringing Begich to commit publicly to taking our ‘no dark money’ pledge.
+  candidate1_img: /images/campaigns/candidate_jenkins.jpg
+  candidate2_img: /images/campaigns/candidate_rahall.jpg
+  video_ad_img: /timelines/images/2014_alaska_broadcast.jpg
+  print_ad_img:
 
-- race: Iowa Senate
-  medium: Des Moines Register
-  preview_link: http://www.counterpac.org/images/CounterPAC_IA_10x20.5.jpg
-  preview_thumb: http://www.counterpac.org/images/ia_sen_print_thumb.jpg
-  date: 08-26-2014
-  
-- race: Colorado 6th District
-  medium: Denver Post
-  preview_link: http://www.counterpac.org/images/CounterPAC_IA_10x20.5.jpg
-  preview_thumb: http://www.counterpac.org/images/co_06_print_thumb.jpg
-  date: 08-26-2014
-
-- race: Alaska Senate
-  medium: NBC-KTUU, ABC-KYUR, CBS-KTVA, ABC-KJUD; Alaska Dispatch News; Facebook; Twitter
-  preview_link: https://www.youtube.com/watch?v=NYa2HicE-jY
-  preview_thumb: http://www.counterpac.org/images/ak_vid_thumb.jpg
-  date: 08-21-2014
-
-- race: Georgia Senate
-  medium: NBC-WXIA, ABC-WSB, CBS-WGCL; Facebook; Twitter
-  preview_link: https://www.youtube.com/watch?v=xLVxV5VXX5s
-  preview_thumb: http://www.counterpac.org/images/ga_vid_thumb.jpg
-  date: 08-21-2014
-
-- race: Alaska Senate
-  medium: Alaska Dispatch News
-  preview_link: http://www.counterpac.org/images/20140730_counterpac_ak.png
-  preview_thumb: http://www.counterpac.org/images/20140730_counterpac_ak_thumb.png
-  date: 07-31-2014
-
-- race: Georgia Senate
-  medium: Atlanta Journal-Constitution
-  preview_link: http://www.counterpac.org/images/20140730_counterpac_ga.png
-  preview_thumb: http://www.counterpac.org/images/20140730_counterpac_ga_thumb.png
-  date: 07-31-2014
-
-- race: West Virginia 3rd District
-  medium: Charleston Gazette
-  preview_link: http://www.counterpac.org/images/20140730_counterpac_wv03.png
-  preview_thumb: http://www.counterpac.org/images/20140730_counterpac_wv03_thumb.png
-  date: 07-31-2014
-
-
-
-
+- race: Colorado 6th Congressional District, 2014
+  permalink: colorado-6th-congressional-2014
+  goal: No Dark Money
+  goal_id: no-dark-money
+  featured: yes
+  short_summary: We showed that when a candidate turns their back on democracy, people will hear about it.
+  med_summary: When Mike Coffman refused to take a ‘no dark money’ pledge, we used it as an opportunity to demonstrate our commitment to accountability.
+  long_summary: When Republican incumbent Mike Coffman refused to take a ‘no dark money’ pledge, we leveraged the opportunity to demonstrate our commitment to political accountability, with the goal of building political credibility in Alaska and West Virginia. Our aggressive broadcast ad calling Coffman out earned a flurry of coverage from major media outlets, provoking an unsuccessful cease and desist order from Coffman.
+  candidate1_img: /images/campaigns/candidate_jenkins.jpg
+  candidate2_img: /images/campaigns/candidate_rahall.jpg
+  video_ad_img: /timelines/images/2014_CO6_broadcast.jpg
+  print_ad_img: 
+    
+# - race: Georgia Senate, 2014
+#   permalink: georgia-senate-2014
+#   goal: No Dark Money
+#   goal_id: no-dark-money
+#   featured: no
+#   short_summary: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+#   med_summary: Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+#   long_summary: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut.
+#   candidate1_img:
+#   candidate2_img:
+#   video_ad_img: /images/campaigns/campaign_georgiasenate_2014.jpg
+#   print_ad_img: 
+#     
+# - race: Iowa Senate, 2014
+#   permalink: iowa-senate-2014
+#   goal: No Dark Money
+#   goal_id: no-dark-money
+#   featured: 
+#   short_summary: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+#   med_summary: Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+#   long_summary: Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut.
+#   candidate1_img:
+#   candidate2_img:
+#   video_ad_img: 
+#   print_ad_img: /images/campaigns/campaign_iowasenate_2014.jpg
 

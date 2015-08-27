@@ -1,0 +1,25 @@
+---
+layout: default
+title: CounterPAC Press
+id: press
+active: press
+---
+
+<section class="hex_pattern_bg edge">
+  <h1 class="ptl">Press</h1>
+  <p class="intro invert under_emphasis emphasis">Read about CounterPAC's Activities in the Press.</p>
+
+  <div class="content_list articles translucent invert">
+    
+    <!-- to add stories here, edit _data/press.yml -->
+    {% for story in site.data.press %}
+    <article class="transition" onclick="window.open('{{ story.link }}')">
+      <a class="title">{{ story.title }}</a>
+      <span class="source">{{ story.media }}</span>
+      <span class="date">{{ story.date }}</span>
+    </article>
+    {% endfor %}
+    
+  </div>
+  
+</section>

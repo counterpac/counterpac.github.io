@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body id="{{ page.id }}" class="{{ page.body_class }}">
+    
+    <div id="main">
+      
+      {% include sec-nav.html %}
+      {% include nav.html %}
+      
+      <div class="content">
+        {{ content }}
+      </div>
+      
+      {% include footer.html %}
+    </div><!-- end #main -->
+    
+    {% include scripts.html %}
+
+  </body>
+
+</html>

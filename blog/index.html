@@ -1,52 +1,63 @@
 ---
-title: Blog
+layout: default
+title: CounterPAC Blog
+id: press
+body_class: blog
+active: blog
 ---
 
-{% include header.html %}
-
-  <div id="outer_main">
-    <div id="inner_main">
-      <!-- home -->
-      <div id="section_home" class="inner_container bg_sizing">
-        <div class="block_container clearfix">
-          <div class="centercol">
-            <a href="http://www.counterpac.org"><img src="http://www.counterpac.org/images/home_medallion_1.png" id="medallion" /></a>
-          </div>
+<section class="hex_pattern_bg edge">
+  <h1 class="ptl">Blog</h1>
+  <p class="intro invert under_emphasis emphasis">Updates From CounterPAC's Internal Blog.</p>
+  <!-- -->
+  <div class="content_list blog_posts translucent invert">
+    
+    {% for post in paginator.posts %}
+      <article class="transition" onclick="location.href='{{ post.url }}'">
+        <div class="title_date mtm clear">
+          <a href="{{ site.url }}{{ post.url }}" class="title">{{ post.title }}</a> <!-- still need after launch? -->
+          <span class="byline_date h4">
+            {% if post.author %}
+              {{ post.author }} - 
+            {% endif %}
+            {{ post.date | date: "%b %-d, %Y" }}
+          </span>
         </div>
-      </div>
-      <!-- home -->
+        <div class="preview_text">
+          {{ post.summary }}
+          <a href="{{ post.url }}" class="full_post">Full Post &raquo;</a>
+        </div>
+      </article>
+    {% endfor %}
+    
+    {% if paginator.total_pages > 1 %}
+    <div class="pagination pages">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="prev-next">&laquo; Prev</a>
+      {% else %}
+        <span class="prev-next">&laquo; Prev</span>
+      {% endif %}
       
-      <!-- section 4 -->
-      <div id="section_four" class="inner_container section_container subpage-container clearfix">
-        <div class="block_container clearfix">
-          <div id="take_action" class="section_four_inner clearfix">
-            <div class="subpage-subheader">
-              <h3 class="salmon">Blog</h3>
-              <h5>Updates From CounterPAC's Internal Blog</h5>
-             <!--  <br style="clear:both;" />   -->
-            <br />
+      <span class="pages-num">
+        {% for page in (1..paginator.total_pages) %}
+          {% if page == paginator.page %}
+            <em>{{ page }}</em>
+          {% elsif page == 1 %}
+            <a href="{{ '/blog/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+          {% else %}
+            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+          {% endif %}
+        {% endfor %}
+      </span>
 
-            <ul class="blog-post-list">
-              {% for post in site.posts %}
-                <li>
-                  <a class="post-title" href="{{ post.url }}">{{ post.title }}</a>
-                  <span class="post-date">{{ post.date | date: "%m-%d-%Y" }}</span>
-                </li>
-              {% endfor %}
-            </ul>         
-
-            </div>
-          </div>
-
-          
-         
-        </div>
-      </div>
-      <!-- end section 4 -->
-
-      {% include footer.html %}
-
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="prev-next">Next &raquo;</a>
+      {% else %}
+        <span class="prev-next">Next &raquo;</span>
+      {% endif %}
     </div>
-  </div>
+    {% endif %}
 
-{% include endfooter.html %}
+  </div>
+  
+</section>

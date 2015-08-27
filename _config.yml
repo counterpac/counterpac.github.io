@@ -1,5 +1,8 @@
 # Site settings
 title: CounterPAC
-# the base hostname & protocol for your site
+description: > # this means to ignore newlines until "baseurl:"
+  As our elections become increasingly flooded with special interest money, Americans have 
+  lost hope in our democracy. CounterPAC has a plan to restore it.
 url: "http://counterpac.org" # production
-# url: "http://0.0.0.0:4000" # local
+paginate: 10
+paginate_path: '/blog/page:num/'

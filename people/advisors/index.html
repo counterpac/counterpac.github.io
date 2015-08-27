@@ -1,0 +1,38 @@
+---
+layout: default
+title: CounterPAC Advisors
+id: people
+class: people-advisors
+active: people
+---
+
+<section class="hex_pattern_bg edge">
+  <h1>Who we are</h1>
+  <p class="intro invert">We are a group of concerned citizens who believe that special interest money is corrupting our political system. We 
+    have backgrounds varying from tech entrepreneurs to political advisors.</p>
+  
+  {% include people-nav.html %}
+  
+  <ul class="people_bios flexible mid_translucent">
+    
+    <!-- to add people here, edit _data/people.yml -->
+    {% for person in site.data.people %}
+      {% if person.tag == 'advisors' %}
+        <li class="media">
+          <img src="{{ site.url }}/images/people/{{ person.photo }}" class="img">
+          <div class="person_bio bd">
+            <strong class="invert">
+              {{ person.name }}
+              {% if person.twitter-link %}<a href="{{ person.twitter-link }}" target="_blank" class="contact_icon twitter">Twitter</a>{% endif %}
+              {% if person.email-link %}<a href="mailto:{{ person.email-link }}" class="contact_icon email">Email</a>{% endif %}
+            </strong>
+            <span class="title h4">{{ person.title }}</span>
+          </div>
+          <p class="bio-text bd">{{ person.bio }}</p>
+        </li>
+      {% endif %} 
+    {% endfor %}
+
+  </ul>
+  
+</section>

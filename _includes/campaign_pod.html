@@ -1,0 +1,26 @@
+<article class="race_pod" onclick="location.href='{{ site.url }}/campaigns/{{ story.permalink }}/'">
+  <div class="image_content">
+    {% if story.video_ad_img %}
+      <div class="broadcast_campaign campaign_image">
+        <img src="{{ site.url }}{{ story.video_ad_img }}" class="video_print">
+      </div>
+    {% elsif story.print_ad_img %}
+    <div class="print_campaign campaign_image">
+      <img src="{{ site.url }}{{ story.print_ad_img }}" class="print_campaign_bg">
+      <img src="{{ site.url }}{{ story.print_ad_img }}" class="print_campaign_small">
+    </div>
+    {% else %}
+    <div class="candidates">
+      <img src="{{ site.url }}{{ story.candidate1_img }}" class="candidate1">
+      <img src="{{ site.url }}{{ story.candidate2_img }}" class="candidate2">
+    </div>
+    {% endif %}
+  </div>
+
+  <div class="campaign_overview ptl">
+    <h2>{{ story.race | truncate: 80, '&hellip;' }}</h2>
+    <h4 class="goal">Our Goal: <a href="{{ site.url }}/pledges/{{ story.goal_id }}/">{{ story.goal }}</a></h4>
+    <p class="short_summary">{{ story.med_summary }}</p>
+    <a href="{{ site.url }}/campaigns/{{ story.permalink }}/" class="lrg-btn transition">Read more</a>
+  </div>
+</article>

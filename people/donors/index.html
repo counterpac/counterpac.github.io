@@ -1,0 +1,32 @@
+---
+layout: default
+title: CounterPAC Advisors
+id: people
+class: people-donors
+active: people
+---
+
+
+<section class="hex_pattern_bg edge">
+   <h1>Who we are</h1>
+   <p class="intro invert">We are a group of concerned citizens who believe that special interest money is corrupting our political system. 
+     We have backgrounds varying from tech entrepreneurs to political advisors.</p>
+   
+  {% include people-nav.html %}
+   
+   <ul class="donors_list flexible mid_translucent">
+     
+     <!-- to add people here, edit _data/people-donors.yml -->
+     {% for person in site.data.people-donors %}
+       <li>{{ person.name }}</li>
+     {% endfor %}
+
+   </ul>
+   
+   <div class="donation_upsell light_translucent">
+     <h3 class="invert">Donate to CounterPAC</h2>
+     <p>Interested in donating to the CounterPAC cause to reform campaign spending? You can help with a contribution.</p>
+     <a href="{{ site.url }}/donate/" class="lrg-btn light-btn mtm">Donate Now</a>
+   </div>
+   
+ </section>

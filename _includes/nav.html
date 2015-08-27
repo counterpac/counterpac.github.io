@@ -1,18 +1,42 @@
-  <div id="nav_container">
-    <div id="fancynav">
-
-        <a href="/#section_one" id="nav_section_one" class="nav_item">problem</a>
-        &bull;
-        <a href="/#section_two" id="nav_section_two" class="nav_item">solution</a>
-        &bull;
-        <a href="/#section_three" id="nav_section_three" class="nav_item">how?</a>
-        &bull;
-        <a href="/#section_four" id="nav_section_four" class="nav_item">take action</a>
-        &bull;
-        <a href="/news" id="nav_news" class="nav_item">news</a>
-        &bull;
-        <a href="/blog" id="nav_blog" class="nav_item">blog</a>
-        &bull;
-        <a id="nav_share" class="nav_item">share</a>
+  <nav id="nav" class="template-nav">
+    <li class="logo-nav">
+      <a href="{{ site.url }}" class="main-logo pan">
+        CounterPAC
+      </a>
+    </li>
+    <ul id="menu" class="primary-list">
+      <ul class="left-align full-links">
+        <li class="mission-nav">
+          <a href="{{ site.url }}/mission"/{% if page.active == 'mission' %} class="active"{% endif %}>Mission</a>
+        </li>
+        <li class="ourwork-nav">
+          <a href="{{ site.url }}/pledges/no-dark-money/"{% if page.active == 'pledges' %} class="active"{% endif %}>Our Work</a>
+        </li>
+        <li class="people-nav">
+          <a href="{{ site.url }}/people/team/"{% if page.active == 'people' %} class="active"{% endif %}>People</a>
+        </li>
+      </ul>
+      <ul class="right-align full-links">
+        <li class="press-nav">
+          <a href="{{ site.url }}/press/"{% if page.active == 'press' %} class="active"{% endif %}>Press</a>
+        </li>
+        <li class="blog-nav">
+          <a href="{{ site.url }}/blog/"{% if page.active == 'blog' %} class="active"{% endif %}>Blog</a>
+        </li>
+        <li class="takeaction-nav">
+          <a href="{{ site.url }}/takeaction/"{% if page.active == 'takeaction' %} class="active"{% endif %}>Take Action</a>
+        </li>
+        <li class="donate-nav">
+          <a href="{{ site.url }}/donate/"{% if page.active == 'donate' %} class="active"{% endif %}>Donate</a>
+        </li>
+      </ul>
+    </ul>
+    <div class="mobile-menu">
+      <span class="link-wrapper donate">
+        <a href="{{ site.url }}/donate/" class="mobile-link">Donate</a>
+      </span>
+      <span class="link-wrapper menu">
+        <a href="#menu" class="mobile-link menu-link">Menu</a>
+      </span>
     </div>
-  </div>
+  </nav>

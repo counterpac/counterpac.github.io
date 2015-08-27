@@ -1,52 +1,40 @@
 ---
 layout: default
+id: press
+body_class: blog_post
+active: blog
 ---
 
-{% include header.html %}
-
-  <div id="outer_main">
-    <div id="inner_main">
-      <!-- home -->
-      <div id="section_home" class="inner_container bg_sizing">
-        <div class="block_container clearfix">
-          <div class="centercol">
-            <a href="{{ site.url }}"><img src="http://www.counterpac.org/images/home_medallion_1.png" id="medallion" /></a>
-          </div>
-        </div>
-      </div>
-      <!-- home -->
-      
-      <div id="blog-wrapper" class="inner_container section_container subpage-container clearfix">
-        <div class="block_container clearfix">
-          <div id="take_action" class="blog_inner clearfix">
-            <div class="blog-header">
-              <span class="blog-homelink"><a href="/blog">CounterPAC Blog</a></span>
-              <h3 class="salmon">{{ page.title }}</h3>
-              <h5 class="blog-meta"> {{ page.date | date_to_string }} {% if page.author %} ~ By  {{ page.author }} {% endif %}</h5>
-              <br style="clear:both;" />  
-            </div>
-            <div id="blog-content">
-              <div id="blog-content-inner">
-                  {{ content }}
-              </div>
-              <div class="pagination">
-                {% if page.previous %}
-                  <a class="blog-link older" href="{{ site.url }}{{page.previous.url}}">Previous</a>
-                {% endif %}
-                {% if page.next %}
-                    <a class="blog-link newer" href="{{ site.url }}{{page.next.url}}">Next</a>
-                {% endif %}
-              </div>
-              <br style="clear:both;" />  
-            </div>
-          </div>
-         
-        </div>
-      </div>
-
-      {% include footer.html %}
-
+<section class="hex_pattern_bg edge">
+  <div class="article translucent invert">
+    <header class="emphasis under_emphasis">
+      <h1>{{ page.title }}</h1>
+      <p class="h4">
+        <span class="byline">
+          {% if page.author %}
+            {{ page.author }}
+          {% endif %}
+          {% if page.meta %}
+             - {{ page.meta }}
+          {% endif %}
+        </span>
+        <span class="post_date">- {{ page.date | date: "%b %-d, %Y" }}</span>        
+      </p>
+    </header>
+    
+    <div class="post_content">
+      {{ content }}
     </div>
+    
+    <div class="pagination prev-next">
+      {% if page.previous %}
+        <a class="blog-link older" href="{{ site.url }}{{page.previous.url}}">&laquo; Previous</a>
+      {% endif %}
+      {% if page.next %}
+          <a class="blog-link newer" href="{{ site.url }}{{page.next.url}}">Next &raquo;</a>
+      {% endif %}
+    </div>
+    
   </div>
-
-{% include endfooter.html %}
+  
+</section>

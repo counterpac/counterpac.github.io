@@ -1,0 +1,167 @@
+---
+layout: default
+title: CounterPAC Pledges
+id: pledges
+body_class: no-dark-money
+active: pledges
+---
+
+<section class="introduction invert">
+  <div class="goals">
+    <strong class="ptm">The goal of CounterPAC&#8217;s advocacy</strong>
+    <p>is to incentivize candidates to take reform pledges that bring greater accountability to their own campaign practices, generating models of reform that demonstrate its possibility and underscore its value.</p>
+  </div>
+
+  <div class="pledges-list translucent">
+    <h1>Pledges:</h1>
+    <ul class="flexible">
+      <li class="active transition">
+        <h2 class="h3"><span>No Dark Money</span></h2>
+      </li>
+      <li class="transition">
+        <h2 class="h3"><a href="{{ site.url }}/pledges/no-outside-money/" class="transition">No Outside Money</a></h2>
+      </li>
+    </ul>
+    <p>Across the ideological spectrum, an overwhelming majority of Americans agree that the public deserves to know who's paying for the 
+       political advertisements that flood our airwaves. Despite this, the amount of secret money in our elections has increased by over 6200% in just 
+       six years.
+    </p>
+    <p>
+    CounterPAC's "no dark money" pledge is a powerful tool that can bring full transparency to political spending by challenging candidates to reject the support of secret donors.
+    </p>
+  </div>
+</section>
+
+<section id="counterfacts">
+  <div class="carousel-outer">
+    <ul class="carousel no-dark-money">
+      <li class="fact1">
+        Outside campaign spending from anonymous donors increased by 6200% in only six years.
+        <!-- Tooltip popup -->
+          <div class="sourcelink bubbleInfo">
+            <span class="trigger h4">source</span>
+            <div class="popup">
+              <div class="popup-inner">
+                Historical Elections: the Money Behind the Election.<br />
+                <a href="http://www.opensecrets.org/outsidespending/disclosure.php" target="_blank">Center for Responsive Politics</a>
+              </div>
+            </div>
+          </div>
+         <!-- END Tooltip popup -->
+      </li>
+      <li class="fact2">
+        No laws prevent special interest fron groups, fly-by-night shell companies, multinational corporations,
+        or even foreign governments from spending money to influence our eletions.
+        <!-- Tooltip popup -->
+          <div class="sourcelink bubbleInfo">
+            <span class="trigger h4">source</span>
+            <div class="popup">
+              <div class="popup-inner">
+                A Plea for the Pledge<br />
+                <a href="http://www.commoncause.org/states/massachusetts/issues/money-in-politics/plea-for-a-pledge/a-plea-for-a-pledge.pdf" target="_blank">Common Cause</a>
+              </div>
+            </div>
+          </div>
+         <!-- END Tooltip popup -->
+      </li>
+      <li class="fact3">
+        60% of outside spending in 2014 Senate races has been funded by untraceable anonymous donors.
+        <!-- Tooltip popup -->
+          <div class="sourcelink bubbleInfo">
+            <span class="trigger h4">source</span>
+            <div class="popup">
+              <div class="popup-inner">
+                A Plea for the Pledge<br />
+                <a href="http://www.commoncause.org/states/massachusetts/issues/money-in-politics/plea-for-a-pledge/a-plea-for-a-pledge.pdf" target="_blank">Common Cause</a>
+              </div>
+            </div>
+          </div>
+         <!-- END Tooltip popup -->
+      </li>
+      <li class="fact4">
+        Anonymous outside money buys almost entirely negative advertising.
+        <!-- Tooltip popup -->
+          <div class="sourcelink bubbleInfo">
+            <span class="trigger h4">source</span>
+            <div class="popup">
+              <div class="popup-inner">
+                A Plea for the Pledge<br />
+                <a href="http://www.commoncause.org/states/massachusetts/issues/money-in-politics/plea-for-a-pledge/a-plea-for-a-pledge.pdf" target="_blank">Common Cause</a>
+              </div>
+            </div>
+          </div>
+         <!-- END Tooltip popup -->
+      </li>  
+    </ul>
+  </div>
+</section>
+
+<section class="counterfacts-alt">
+  <ul class="counterfacts-sm no-dark-money">
+    <li>
+      <div class="sourcelink bubbleInfo">
+        <a href="http://www.opensecrets.org/outsidespending/disclosure.php" target="_blank" class="trigger h4">source</a>
+      </div>
+      <img src="{{ site.url }}/images/counterfacts/tiles_nodarkmoney_1.png">
+    </li>
+    <li>
+      <div class="sourcelink bubbleInfo">
+        <a href="http://www.commoncause.org/states/massachusetts/issues/money-in-politics/plea-for-a-pledge/a-plea-for-a-pledge.pdf" target="_blank" class="trigger h4">source</a>
+      </div>
+      <img src="{{ site.url }}/images/counterfacts/tiles_nodarkmoney_2.png">
+    </li>
+    <li>
+      <div class="sourcelink bubbleInfo">
+        <a href="http://www.commoncause.org/states/massachusetts/issues/money-in-politics/plea-for-a-pledge/a-plea-for-a-pledge.pdf" target="_blank" class="trigger h4">source</a>
+      </div>
+      <img src="{{ site.url }}/images/counterfacts/tiles_nodarkmoney_3.png">
+    </li>
+    <li>
+      <div class="sourcelink bubbleInfo">
+        <a href="http://www.commoncause.org/states/massachusetts/issues/money-in-politics/plea-for-a-pledge/a-plea-for-a-pledge.pdf" target="_blank" class="trigger h4">source</a>
+      </div>
+      <img src="{{ site.url }}/images/counterfacts/tiles_nodarkmoney_4.png">
+    </li>
+  </li>
+</section>
+
+{% unless story.goal_id == 'no-dark-money' %}
+<section class="campaign-h-list article-hover">
+  <h2 class="h1 mbl">Campaigns</h2>
+  <div class="section-inner">
+    
+    <!-- to add campaigns here, edit _data/campaigns.yml -->
+    {% for story in site.data.campaigns %}
+      {% if story.goal_id == 'no-dark-money' %}
+        {% include campaign_pod.html %}
+      {% endif %} 
+    {% endfor %}
+
+  </div>
+</section>
+{% endunless %}
+
+
+<section class="pledge-doc clear">
+  <aside class="pull_quote h1">
+    <span>"No </span>Dark Money" Pledge
+  </aside>
+  <div class="document">
+    <p class="mtl"><b>The Candidates reject the following expenditures by any entity unless the funding source of the expenditure is clearly disclosed 
+      and can be traced back entirely to one or more of the following "transparent sources":</b>
+    </p>
+    <ul>
+      <li>An individual;</li>
+      <li>A well known corporation with revenue from trade or commerce of at least $50 million for each of the past five years;</li>
+      <li>A nonprofit that has more than one million members, has been in existence for more than 10 years, has members in all 50 states 
+        and raises 15 percent or less of its funds from corporations; or</li>
+      <li>An entity registered and filing reports as a "political committee" with the Federal Election Commission that has not accepted 
+        more than $10,000 from a corporation or nonprofit failing to meet the criteria described above.</li>
+    </ul>
+    <p><strong>Rejected Undisclosed Expenditures.</strong> The Candidates reject the following expenditures by any entity failing to meet the criteria described above:</p>
+    <ul>
+      <li><em>independent expenditures</em>, that is, any independent-expenditure television, radio, cable, satellite, or online advertising by a third party in support of or in opposition to a named, referenced (including by title), or otherwise identified Candidate;</li>
+    </ul>
+    <a class="read-full-btn lrg-btn light-btn fancybox-vid" data-fancybox-type="iframe" href="{{ site.url }}/pledges/no-dark-money/nodarkmoney_pledge_text.html">Read Full Pledge</a>
+  </div>
+</section>

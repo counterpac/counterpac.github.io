@@ -3,6 +3,7 @@ layout: post
 title:  "Secret Donors Beware, CounterPAC is Coming."
 date:   2014-08-08 12:28:37
 author: Jay Costa
+summary: It's been a big week at CounterPAC. Last Thursday, we launched our first wave of ads in Alaska, Georgia, and West Virginia calling on candidates to take our "no dark money" pledge. Already, people are paying attention. Our launch received coverage from national outlets such as CNN, the Washington Post, and HuffPo and major local outlets in all three of our target states.
 ---
 
 It's been a big week at CounterPAC. Last Thursday, we launched our first wave of ads in Alaska, Georgia, and West Virginia calling on candidates to take our "no dark money" pledge.

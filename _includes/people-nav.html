@@ -1,0 +1,13 @@
+<nav class="subnav_people ptl">
+  <ul class="clear line">
+    <li class="nav_team h1 unit size1of3{% if page.class == "people-team" %} active{% endif %}">
+      {% if page.class == "people-team" %}Team{% else %}<a href="{{ site.url }}/people/team/">Team</a>{% endif %}
+    </li>
+    <li class="nav_advisors h1 unit size1of3{% if page.class == "people-advisors" %} active{% endif %}">
+      {% if page.class == "people-advisors" %}Advisors{% else %}<a href="{{ site.url }}/people/advisors/">Advisors</a>{% endif %}
+    </li>
+    <li class="nav_donors h1 unit size1of3 lastUnit{% if page.class == "people-donors" %} active{% endif %}">
+      {% if page.class == "people-donors" %}Donors{% else %}<a href="{{ site.url }}/people/donors/">Donors</a>{% endif %}
+    </li>
+  </ul>
+</nav>
