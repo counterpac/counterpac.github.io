@@ -273,7 +273,7 @@ section { padding: 35px 32px; }
 #pledges .document .read-full-btn { display: block; width: 250px; margin: 30px auto 10px; }
 #pledges .fancybox-skin { background: #F4F3EA; } /* fancybox */
 
-#mission .intro { position: relative; height: 580px; background: #9b9980 url('../images/backgrounds/benjamin.jpg') no-repeat 50% -58px; }
+#mission .intro { position: relative; height: 575px; background: #9b9980 url('../images/backgrounds/benjamin.jpg') no-repeat 50% -58px; }
 #mission .intro h1 { position: absolute; top: 112px; left: 50px; z-index: 2; }
 #mission .intro h1:after { content: ''; position: absolute; width: 38%; left: 0; bottom: -35px; border-bottom: 13px solid #EC145B; }
 #mission .intro .section_copy { width: 810px; height: 475px; position: absolute; bottom: 0; right: 0; }
