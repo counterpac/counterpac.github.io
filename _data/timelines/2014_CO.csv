@@ -1,9 +1,9 @@
 date,display_date,description,link,series,html
 "August 26, 2014",,,,Print Ad,"<div class=""detail media print-ad"">
   <div class=""image_wrapper clearfix img"">
-    <a href=""http://www.counterpac.org/images/timelines/2014_CO6_print-lrg.jpg"" target=""_blank"" class=""fancybox"">
-      <img src=""http://www.counterpac.org/images/timelines/icon_image-expand.png"" class=""expand-icon"" />
-      <img src=""http://www.counterpac.org/images/timelines/2014_CO6_print.jpg"" class=""print_img"" />
+    <a href=""http://www.counterpac.org/timelines/images/2014_CO6_print-lrg.jpg"" target=""_blank"" class=""fancybox"">
+      <img src=""http://www.counterpac.org/timelines/images/icon_image-expand.png"" class=""expand-icon"" />
+      <img src=""http://www.counterpac.org/timelines/images/2014_CO6_print.jpg"" class=""print_img"" />
     </a>
   </div>
   <div class=""bd"">
@@ -26,8 +26,8 @@ date,display_date,description,link,series,html
 "September 14, 2014",,,,Broadcast Ad,"<div class=""detail broadcast-ad"">
   <div class=""video_wrapper"">
     <a href=""https://www.youtube.com/embed/PTHqcd0m9FQ"" target=""_blank"" class=""fancybox-vid fancybox.iframe"">
-      <img src=""http://www.counterpac.org/images/timelines/icon_video-play.png"" class=""play-icon"" />
-      <img src=""http://www.counterpac.org/images/timelines/2014_CO6_broadcast.jpg""  class=""video-thumb"" />
+      <img src=""http://www.counterpac.org/timelines/images/icon_video-play.png"" class=""play-icon"" />
+      <img src=""http://www.counterpac.org/timelines/images/2014_CO6_broadcast.jpg""  class=""video-thumb"" />
     </a>
   </div>
   <div>

@@ -24,8 +24,12 @@ active: pledges
   
   <section class="timeline">
     <h1>Timeline</h1>
+    
+    <!-- Start horizontal timeline -->
     <iframe src="{{ site.url }}/timelines/2014_Rahall-Jenkins_timeline.html" frameborder="0" scrolling="no" width="100%" height="700"></iframe>
-
+    <!-- End horizontal timeline -->
+    
+    <!-- Start vertical timeline for mobile -->
     <div class="vertical-timeline">
       
       <style>
@@ -49,8 +53,6 @@ active: pledges
         .vertical-timeline .timeline-items li .video-thumb { max-width: 460px; width: 100%; }
 
         .type-icon { display: block; width: 28px; height: 28px; position: absolute; top: 18px; left: -18px; border-radius: 50%; background: url('{{ site.url }}/images/timelines/timeline_icons.png') no-repeat 0 0; text-indent: -9999px; }
-
-        /* Print */
         .timeline-items .type-icon.print_ad { background-color: #ec145b !important; border: 1px solid #d50b4d; background-position: -60px -10px; }
         .timeline-items .type-icon.press { background-color: #a4a188 !important; border: 1px solid #8b8871; background-position: -153px -9px; }
         .timeline-items .type-icon.meeting { background-color: #3e3b22 !important; border: 1px solid #282614; background-position: -106px -10px; }
@@ -82,6 +84,7 @@ active: pledges
           </li>
         {% endfor %}  
       </ul>
+      <!-- end vertical timeline -->
       
     </div>
     

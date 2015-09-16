@@ -1,9 +1,9 @@
 date,display_date,description,link,series,html
 "July 31, 2014",,,,Print Ad,"<div class=""detail media print-ad"">
   <div class=""image_wrapper clearfix img"">
-    <a href=""images/2014_alaska_print-lrg.jpg"" target=""_blank"">
-      <img src=""images/icon_image-expand.png"" class=""expand-icon"" />
-      <img src=""images/2014_alaska_print-thumb.jpg"" class=""print_img"" />
+    <a href=""http://www.counterpac.org/timelines/images/2014_alaska_print-lrg.jpg"" target=""_blank"" class=""fancybox"">
+      <img src=""http://www.counterpac.org/timelines/images/icon_image-expand.png"" class=""expand-icon"" />
+      <img src=""http://www.counterpac.org/timelines/images/2014_alaska_print-thumb.jpg"" class=""print_img"" />
     </a>
   </div>
   <div class=""bd"">
@@ -15,9 +15,9 @@ date,display_date,description,link,series,html
 </div>"
 "August 21, 2014",,,,Broadcast Ad,"<div class=""detail broadcast-ad"">
   <div class=""video_wrapper"">
-    <a href=""https://www.youtube.com/watch?v=NYa2HicE-jY"" target=""_blank"">
-      <img src=""images/icon_video-play.png"" class=""play-icon"" />
-      <img src=""images/2014_alaska_broadcast.jpg"" class=""video-thumb"" />
+    <a href=""https://www.youtube.com/watch?v=NYa2HicE-jY"" target=""_blank"" class=""fancybox-vid fancybox.iframe"">
+      <img src=""http://www.counterpac.org/timelines/images/icon_video-play.png"" class=""play-icon"" />
+      <img src=""http://www.counterpac.org/timelines/images/2014_alaska_broadcast.jpg"" class=""video-thumb"" />
     </a>
   </div>
   <div>

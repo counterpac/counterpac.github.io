@@ -24,8 +24,12 @@ active: pledges
       
       <section class="timeline">
         <h1>Timeline</h1>
-        <iframe src="{{ site.url }}/timelines/2014_AlaskaSenate.html" frameborder="0" scrolling="no" width="100%" height="700"></iframe>
         
+        <!-- Start horizontal timeline -->
+        <iframe src="{{ site.url }}/timelines/2014_AlaskaSenate.html" frameborder="0" scrolling="no" width="100%" height="700"></iframe>
+        <!-- End horizontal timeline -->
+        
+        <!-- Start vertical timeline for mobile -->
         <div class="vertical-timeline">
 
           <style>
@@ -81,6 +85,7 @@ active: pledges
               </li>
             {% endfor %}  
           </ul>
+          <!-- End vertical timeline -->
 
         </div>
         
