@@ -1,8 +1,10 @@
+---
 layout: post
 title:  "CounterPAC Launches Ad Campaign Supporting Pro-Disclose Act Candidates"
 date:   2016-06-01 12:28:37
 author: Jay Costa
 summary: Following announcement to form an independent expenditure committee in CA, tech entrepreneur-backed political action organization launches a mail campaign supporting four candidates in competitive state legislative races who support the Disclose Act.
+---
 
 <p dir="ltr" style="margin: 10px 0;padding: 0;mso-line-height-rule: exactly;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;color: #202020;font-family: Helvetica;font-size: 16px;line-height: 150%;text-align: left;"><strong>June 2, 2016 </strong>-- CounterPAC, a nonpartisan organization working for more accountable elections by incentivizing the adoption of model reform solutions, distributed mailers to voters in the four districts of the pro-Disclose Act candidates shown below. The mailers support each candidate for their position on the California Disclose Act, which will lead to increased transparency, disclosure, and accountability in the state.<br>
 <br>
