@@ -436,6 +436,8 @@ section { padding: 35px 32px; }
 #error footer .footer_logo { display: none; }
 #error footer .side { width: 50%; }
 
+.blog_push { padding-top:5%; }
+
 /* ------------------- media queries ---------------- */
 
 /* iPads (portrait and landscape) ----------- */
